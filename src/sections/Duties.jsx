@@ -1,32 +1,32 @@
 import React from 'react';
-import { Server, MonitorSmartphone, Wifi, ShieldCheck } from 'lucide-react';
+import { Server, MonitorSmartphone, Wifi, ShieldCheck , PencilSparkles , Database} from 'lucide-react';
 import DutyCard from '../components/DutyCard';
 
 const Duties = () => {
   const tasks = [
     {
       id: 1,
-      icon: <Server className="w-6 h-6" />,
-      title: "ดูแลระบบเซิร์ฟเวอร์",
-      desc: "[รอเนื้อหาจากคุณ: อธิบายงานดูแลเซิร์ฟเวอร์ เช่น ตั้งค่า, ตรวจสอบสถานะ]"
+      icon: <MonitorSmartphone className="w-6 h-6" />,
+      title: "ศึกษาอุปกรณ์ภายในและระบบจัดการ",
+      desc: "ศึกษาอุปกรณ์ภายในบริษัท เช่น เครื่อง MIT , เครื่อง Attandance , เครื่อง E-ink"
     },
     {
       id: 2,
-      icon: <MonitorSmartphone className="w-6 h-6" />,
-      title: "แก้ไขปัญหาอุปกรณ์ IT",
-      desc: "[รอเนื้อหาจากคุณ: การซ่อมแซม จัดเตรียมคอมพิวเตอร์ให้พนักงาน]"
+      icon: <PencilSparkles className="w-6 h-6" />,
+      title: "แก้ไขปัญหาอุปกรณ์เบื้องต้น",
+      desc: "การแก้ไขปละดูแลอุปกรณ์เบื้องต้นเพื่อส่งมอบต่อไป"
     },
     {
       id: 3,
-      icon: <Wifi className="w-6 h-6" />,
-      title: "ดูแลระบบ Network",
-      desc: "[รอเนื้อหาจากคุณ: การจัดการอินเทอร์เน็ต, Router, Access Point]"
+      icon: <Database className="w-6 h-6" />,
+      title: "จัดทำการเก็บคลังข้อมูลของบริษัท",
+      desc: "เป็นการจัดเก็บคลังข้อมูลของบริษัทเพื่อนำไปใช้ในการทำงานต่อไป"
     },
     {
       id: 4,
       icon: <ShieldCheck className="w-6 h-6" />,
-      title: "Security & Software",
-      desc: "[รอเนื้อหาจากคุณ: การติดตั้งโปรแกรม, แอนตี้ไวรัส, การตั้งค่าสิทธิ์ผู้ใช้]"
+      title: "การติดตามหน้างานกับรุ่นพี่",
+      desc: "เป็นการติดตามหน้างานกับรุ่นพี่เพื่อเรียนรู้และทำความเข้าใจเกี่ยวกับปัญาหาที่เกิดขึ้นในหน้างานและการแก้ไขปัญหา"
     }
   ];
 

@@ -10,16 +10,16 @@ const WhyExzy = () => {
           <div className="w-full lg:w-1/2">
             <h2 className="text-4xl font-bold text-white mb-6">ทำไมถึงเลือกฝึกงานที่ <span className="text-primary-400">Exzy?</span></h2>
             <p className="text-lg text-primary-100 mb-8 leading-relaxed">
-              เหตุผลส่วนตัวที่ตัดสินใจเลือกบริษัทนี้เพื่อเป็นสถานที่เก็บเกี่ยวประสบการณ์ก่อนเรียนจบ
+              เหตุผลฃที่ตัดสินใจเลือกบริษัทนี้เพื่อเป็นสถานที่เก็บเกี่ยวประสบการณ์
             </p>
             
             <div className="space-y-6">
                 {/* Reason 1 */}
                 <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl shadow-lg border border-white/20 relative overflow-hidden group hover:border-primary-400 hover:bg-white/15 transition-all">
                    <div className="absolute top-0 left-0 w-2 h-full bg-primary-400 group-hover:w-3 transition-all"></div>
-                   <h3 className="text-xl font-bold text-white mb-2 ml-2">[รอเนื้อหา: เหตุผลที่ 1]</h3>
+                   <h3 className="text-xl font-bold text-white mb-2 ml-2">การทำงานที่ตรงจุด</h3>
                    <p className="text-primary-50/80 leading-relaxed ml-2">
-                      [รอเนื้อหา: เช่น วัฒนธรรมองค์กร, เทคโนโลยีที่ใช้, หรือชื่อเสียงของบริษัท]
+                      เป็นการทำงานที่ตรงจุด พาเข้าใจถึงปัญหาจริงที่เกิดขึ้นในองค์กร และได้เรียนรู้การแก้ไขปัญหาอย่างเป็นระบบ รวมถึงร่วมแก้ไขปัญหาไปพร้อมกับทีมงานที่มีประสบการณ์
                    </p>
                 </div>
                 
