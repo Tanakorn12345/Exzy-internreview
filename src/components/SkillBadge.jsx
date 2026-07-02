@@ -1,10 +1,19 @@
 import React from 'react';
 
-const SkillBadge = ({ name, category }) => {
+const SkillBadge = ({ name, type = "hard" }) => {
+  // สีแยกตามประเภททักษะ (Hard skill กับ Soft skill)
+  const isHardSkill = type === "hard";
+  
   return (
-    <div className="px-5 py-3 bg-white rounded-xl shadow-sm border border-slate-200 flex flex-col min-w-[120px]">
-      <span className="text-xs text-primary-500 font-medium mb-1">{category}</span>
-      <span className="text-slate-800 font-semibold">{name}</span>
+    <div className={`
+      px-5 py-3 rounded-xl border text-sm font-semibold flex items-center gap-2
+      transition-all duration-300 hover:-translate-y-1 shadow-sm hover:shadow-md
+      ${isHardSkill 
+        ? 'bg-white border-primary-500 text-dark-500 hover:bg-primary-500 hover:text-white' 
+        : 'bg-dark-500 border-dark-500 text-white hover:bg-primary-500 hover:border-primary-500'}
+    `}>
+      <span className={`w-2 h-2 rounded-full ${isHardSkill ? 'bg-primary-500' : 'bg-primary-400'}`}></span>
+      {name}
     </div>
   );
 };

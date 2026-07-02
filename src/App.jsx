@@ -12,7 +12,7 @@ import Conclusion from './sections/Conclusion';
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col bg-slate-50">
+    <div className="min-h-screen flex flex-col bg-white font-sans text-dark-500">
       <Navbar />
       <main className="flex-grow pt-16">
         <Hero />

@@ -11,9 +11,9 @@
   --color-accent-500: #f7931e; /* Orange */
   --color-accent-600: #c67618;
   
-  --color-dark-500: #2c1e4c; /* Dark Purple */
-  --color-dark-600: #1f1536;
-  --color-dark-900: #0f0a1b;
+  --color-dark-500: #0f172a; /* Deep Navy Blue */
+  --color-dark-600: #1e293b;
+  --color-dark-900: #020617;
 }
 
 @layer base {
