@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Briefcase , Settings , Users} from 'lucide-react';
 
+
 const Hero = () => {
   return (
     <section id="hero" className="relative pt-28 pb-32 flex items-center overflow-hidden  bg-white">
@@ -24,7 +25,7 @@ const Hero = () => {
             </div>
             
             <h1 className="text-5xl md:text-7xl font-bold text-dark-500 mb-6 tracking-tight leading-tight">
-              My Intership at <br className="hidden md:block" />
+              My Internship at <br className="hidden md:block" />
               <span className="text-primary-500">Exzy</span>
             </h1>
             
@@ -44,7 +45,11 @@ const Hero = () => {
             <div className="relative group">
               <div className="absolute inset-0 bg-primary-500 rounded-full blur-[40px] opacity-20 group-hover:opacity-40 transition-opacity duration-500"></div>
               <div className="w-64 h-64 md:w-80 md:h-80 bg-white rounded-full border-4 border-primary-500 shadow-xl overflow-hidden flex items-center justify-center relative z-10 transition-transform duration-500 hover:scale-105">
-                <span className="text-primary-500/50 text-lg font-medium">รูปโปรไฟล์ของคุณ</span>
+                <img
+                  src={'/src/assets/logo exzy.jpg'}
+                  alt="Profile"
+                  className="w-full h-full object-cover"
+                />
               </div>
               
               <div className="absolute top-10 -left-6 w-14 h-14 bg-dark-500 rounded-full shadow-lg border-2 border-white flex items-center justify-center z-20 animate-bounce text-white" style={{ animationDuration: '3s' }}>

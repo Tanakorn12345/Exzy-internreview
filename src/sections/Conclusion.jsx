@@ -10,11 +10,11 @@ const Conclusion = () => {
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
         <Quote className="w-16 h-16 text-primary-500 mx-auto mb-8 opacity-40" />
-        <h2 className="text-3xl md:text-5xl font-bold mb-8 leading-tight text-dark-500">
-          "[รอเนื้อหา: คำคมหรือประโยคสรุปความประทับใจสั้นๆ เช่น การฝึกงานที่นี่ให้ประสบการณ์ที่หาไม่ได้จากในห้องเรียน]"
+        <h2 className="text-3xl md:text-4xl font-bold mb-8 leading-tight text-dark-500">
+          "ประสบการณ์จากการได้ลงมือทำและแก้ปัญหาหน้างานจริง"
         </h2>
         <p className="text-xl text-dark-500/80 leading-relaxed mb-12 max-w-3xl mx-auto">
-          [รอเนื้อหา: สรุปความรู้สึกทั้งหมดที่อยากบอกกับบริษัท หรือคำแนะนำสำหรับน้องๆ ที่อยากมาฝึกงานที่นี่]
+          การฝึกงานตำแหน่ง IT Support ที่ Exzy ให้ประสบการณ์ที่ดีมากครับ ผมได้เรียนรู้ตั้งแต่ระบบ Smart Office สมัยใหม่ การดูแลฮาร์ดแวร์ ไปจนถึงการลงพื้นที่หน้างานจริงร่วมกับพี่เลี้ยง และความเป็นกันเองภายในทีม นอกจากทักษะการใช้ Tools ต่างๆ ที่เพิ่มขึ้นแล้ว ยังได้พัฒนาทักษะการสื่อสารและการปรับตัว (Soft Skills) อีกด้วย สิ่งที่ประทับใจที่สุดคือวัฒนธรรมองค์กรที่เปิดกว้างและพี่ ที่คอยสอนงานอย่างเป็นกันเอง
         </p>
         
         <div className="flex items-center justify-center gap-5 bg-primary-500/5 py-4 px-8 rounded-full border border-primary-500/20 inline-flex shadow-sm">
@@ -23,7 +23,7 @@ const Conclusion = () => {
              รูป
           </div>
           <div className="text-left">
-            <p className="font-bold text-dark-500 text-lg">[ชื่อของคุณ]</p>
+            <p className="font-bold text-dark-500 text-lg">ธนกร (Tanakorn)</p>
             <p className="text-primary-600 font-medium">IT Support Intern, Exzy</p>
           </div>
         </div>

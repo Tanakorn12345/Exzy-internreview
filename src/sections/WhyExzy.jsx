@@ -1,4 +1,5 @@
 import React from 'react';
+import Exzyoffice from '../assets/Exzyoffice.png';
 
 const WhyExzy = () => {
   return (
@@ -8,37 +9,50 @@ const WhyExzy = () => {
         <div className="flex flex-col lg:flex-row gap-12 items-center">
           
           <div className="w-full lg:w-1/2">
-            <h2 className="text-4xl font-bold text-white mb-6">ทำไมถึงเลือกฝึกงานที่ <span className="text-primary-400">Exzy?</span></h2>
+            <h2 className="text-3xl font-bold text-white mb-4 inline-block border-b-4 border-white-500 pb-2">ทำไมถึงเลือก Exzy</h2>
+
             <p className="text-lg text-primary-100 mb-8 leading-relaxed">
-              เหตุผลฃที่ตัดสินใจเลือกบริษัทนี้เพื่อเป็นสถานที่เก็บเกี่ยวประสบการณ์
+              เหตุผลที่ตัดสินใจเลือกบริษัทนี้เพื่อเป็นสถานที่เก็บเกี่ยวประสบการณ์
             </p>
             
             <div className="space-y-6">
                 {/* Reason 1 */}
                 <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl shadow-lg border border-white/20 relative overflow-hidden group hover:border-primary-400 hover:bg-white/15 transition-all">
                    <div className="absolute top-0 left-0 w-2 h-full bg-primary-400 group-hover:w-3 transition-all"></div>
-                   <h3 className="text-xl font-bold text-white mb-2 ml-2">การทำงานที่ตรงจุด</h3>
+                   <h3 className="text-xl font-bold text-white mb-2 ml-2">สถานที่
+                    ทำงานใจกลางเมืองที่สะดวกต่อการเดินทาง
+                   </h3>
                    <p className="text-primary-50/80 leading-relaxed ml-2">
-                      เป็นการทำงานที่ตรงจุด พาเข้าใจถึงปัญหาจริงที่เกิดขึ้นในองค์กร และได้เรียนรู้การแก้ไขปัญหาอย่างเป็นระบบ รวมถึงร่วมแก้ไขปัญหาไปพร้อมกับทีมงานที่มีประสบการณ์
+                      สถานที่ทำงานตั้งอยู่ใจกลางเมือง ทำให้สะดวกต่อการเดินทางและเข้าถึงได้ง่าย
                    </p>
                 </div>
                 
                 {/* Reason 2 */}
                 <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl shadow-lg border border-white/20 relative overflow-hidden group hover:border-primary-400 hover:bg-white/15 transition-all">
                    <div className="absolute top-0 left-0 w-2 h-full bg-primary-400 group-hover:w-3 transition-all"></div>
-                   <h3 className="text-xl font-bold text-white mb-2 ml-2">[รอเนื้อหา: เหตุผลที่ 2]</h3>
+                   <h3 className="text-xl font-bold text-white mb-2 ml-2">เทคโนโลยีทันสมัยของผลิตภัณฑ์</h3>
                    <p className="text-primary-50/80 leading-relaxed ml-2">
-                      [รอเนื้อหา: เช่น ต้องการฝึกฝนทักษะการแก้ปัญหาในสภาพแวดล้อมการทำงานจริง หรือความท้าทายใหม่ๆ]
+                      เป็นบริษัทเกี่ยวกับการผลิตระบบ smart office และ smart workplace ที่ค่อนข้างครบวงจร และเป็นที่ต้องการของตลาดอย่างแน่นอนในอนาคต
+                   </p>
+                </div>
+                {/* Reason 3 */}
+                <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl shadow-lg border border-white/20 relative overflow-hidden group hover:border-primary-400 hover:bg-white/15 transition-all">
+                   <div className="absolute top-0 left-0 w-2 h-full bg-primary-400 group-hover:w-3 transition-all"></div>
+                   <h3 className="text-xl font-bold text-white mb-2 ml-2">วิสัยทัศน์และวัฒนธรรมองค์กรที่ทันสมัย</h3>
+                   <p className="text-primary-50/80 leading-relaxed ml-2">
+                      ชื่นชอบในรูปแบบการทำงานและวัฒนธรรมองค์กรของ Exzy ที่เปิดกว้างและดูทันสมัย ซึ่งเป็นสภาพแวดล้อมที่เหมาะสมอย่างยิ่งสำหรับการเริ่มต้นเรียนรู้และพัฒนาศักยภาพของตนเอง
                    </p>
                 </div>
             </div>
           </div>
 
-          <div className="w-full lg:w-1/2 flex justify-center">
-             {/* คุณสามารถเปลี่ยนเป็นรูปภาพออฟฟิศ หรือรูปถ่ายของคุณกับทีมได้ */}
-             <div className="w-full max-w-md aspect-square bg-dark-400 rounded-full border-8 border-primary-500/30 flex items-center justify-center shadow-2xl relative overflow-hidden group">
-                 <div className="absolute inset-0 bg-primary-500/20 group-hover:bg-transparent transition-colors duration-500"></div>
-                 <span className="text-primary-200 text-lg">รูปภาพประกอบ (ถ้ามี)</span>
+          <div className="w-full lg:w-1/2 flex justify-center lg:justify-end lg:pl-8">
+             <div className="w-full max-w-md aspect-square bg-dark-400 rounded-full border-8 border-primary-500/30 shadow-2xl relative overflow-hidden group">
+                 <img
+                   src={Exzyoffice}
+                   alt="Exzy Office"
+                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                 />
              </div>
           </div>
           

@@ -9,7 +9,7 @@ const Footer = () => {
           <img src="/src/assets/logo exzy.jpg" alt="Exzy Logo" className="w-8 h-8 object-contain border border-white rounded-lg" />
           <span className="font-bold text-xl text-white">Intern Review</span>
         </div>
-        <p className="text-primary-100/60 mt-4">© 2026 IT Support Internship @ Exzy. All rights reserved.</p>
+        <p className="text-primary-100/60 mt-4">© 2026 IT Support Internship by tanakorn</p>
       </div>
     </footer>
   );

@@ -30,33 +30,37 @@ const Navbar = () => {
             <span className="font-semibold text-xl text-dark-500 border-l-2 border-primary-500 pl-2 ml-1">Intern Review</span>
           </div>
           
-          <div className="hidden md:flex space-x-8">
-            <a href="#about" className="text-dark-500/80 hover:text-primary-500 font-medium transition-colors">About</a>
-            <a href="#why-exzy" className="text-dark-500/80 hover:text-primary-500 font-medium transition-colors">Why Exzy</a>
-            <a href="#duties" className="text-dark-500/80 hover:text-primary-500 font-medium transition-colors">Duties</a>
-            <a href="#projects" className="text-dark-500/80 hover:text-primary-500 font-medium transition-colors">Projects</a>
-            <a href="#skills" className="text-dark-500/80 hover:text-primary-500 font-medium transition-colors">Skills</a>
+          <div className="hidden lg:flex space-x-6 xl:space-x-8">
+            <a href="#about" className="text-dark-500/80 hover:text-primary-500 font-medium transition-all duration-300 hover:scale-105">About</a>
+            <a href="#why-exzy" className="text-dark-500/80 hover:text-primary-500 font-medium transition-all duration-300 hover:scale-105">Why Exzy</a>
+            <a href="#duties" className="text-dark-500/80 hover:text-primary-500 font-medium transition-all duration-300 hover:scale-105">Duties</a>
+            <a href="#projects" className="text-dark-500/80 hover:text-primary-500 font-medium transition-all duration-300 hover:scale-105">Projects</a>
+            <a href="#skills" className="text-dark-500/80 hover:text-primary-500 font-medium transition-all duration-300 hover:scale-105">Skills</a>
+            <a href="#culture" className="text-dark-500/80 hover:text-primary-500 font-medium transition-all duration-300 hover:scale-105">Culture</a>
+            <a href="#conclusion" className="text-dark-500/80 hover:text-primary-500 font-medium transition-all duration-300 hover:scale-105">Conclusion</a>
           </div>
 
-          <div className="md:hidden flex items-center">
-            <button onClick={toggleMenu} className="text-dark-500 hover:text-primary-500 focus:outline-none">
+          <div className="lg:hidden flex items-center">
+            <button onClick={toggleMenu} className="text-dark-500 hover:text-primary-500 focus:outline-none transition-transform duration-300 active:scale-95">
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
         </div>
       </div>
 
-      {isOpen && (
-        <div className="md:hidden bg-white border-b border-primary-500/10 shadow-xl absolute w-full">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <a href="#about" onClick={toggleMenu} className="block px-3 py-2 rounded-md text-base font-medium text-dark-500 hover:text-primary-500 hover:bg-primary-500/5">About</a>
-            <a href="#why-exzy" onClick={toggleMenu} className="block px-3 py-2 rounded-md text-base font-medium text-dark-500 hover:text-primary-500 hover:bg-primary-500/5">Why Exzy</a>
-            <a href="#duties" onClick={toggleMenu} className="block px-3 py-2 rounded-md text-base font-medium text-dark-500 hover:text-primary-500 hover:bg-primary-500/5">Duties</a>
-            <a href="#projects" onClick={toggleMenu} className="block px-3 py-2 rounded-md text-base font-medium text-dark-500 hover:text-primary-500 hover:bg-primary-500/5">Projects</a>
-            <a href="#skills" onClick={toggleMenu} className="block px-3 py-2 rounded-md text-base font-medium text-dark-500 hover:text-primary-500 hover:bg-primary-500/5">Skills</a>
-          </div>
+      <div 
+        className={`lg:hidden bg-white/95 backdrop-blur-xl border-b border-primary-500/10 shadow-2xl absolute w-full transition-all duration-500 ease-in-out origin-top ${isOpen ? 'opacity-100 translate-y-0 visible' : 'opacity-0 -translate-y-4 invisible pointer-events-none'}`}
+      >
+        <div className="px-4 pt-2 pb-6 space-y-2 sm:px-6">
+            <a href="#about" onClick={toggleMenu} className="block px-4 py-3 rounded-xl text-base font-medium text-dark-500 hover:text-primary-500 hover:bg-primary-500/10 transition-all duration-300">About</a>
+            <a href="#why-exzy" onClick={toggleMenu} className="block px-4 py-3 rounded-xl text-base font-medium text-dark-500 hover:text-primary-500 hover:bg-primary-500/10 transition-all duration-300">Why Exzy</a>
+            <a href="#duties" onClick={toggleMenu} className="block px-4 py-3 rounded-xl text-base font-medium text-dark-500 hover:text-primary-500 hover:bg-primary-500/10 transition-all duration-300">Duties</a>
+            <a href="#projects" onClick={toggleMenu} className="block px-4 py-3 rounded-xl text-base font-medium text-dark-500 hover:text-primary-500 hover:bg-primary-500/10 transition-all duration-300">Projects</a>
+            <a href="#skills" onClick={toggleMenu} className="block px-4 py-3 rounded-xl text-base font-medium text-dark-500 hover:text-primary-500 hover:bg-primary-500/10 transition-all duration-300">Skills</a>
+            <a href="#culture" onClick={toggleMenu} className="block px-4 py-3 rounded-xl text-base font-medium text-dark-500 hover:text-primary-500 hover:bg-primary-500/10 transition-all duration-300">Culture</a>
+            <a href="#conclusion" onClick={toggleMenu} className="block px-4 py-3 rounded-xl text-base font-medium text-dark-500 hover:text-primary-500 hover:bg-primary-500/10 transition-all duration-300">Conclusion</a>
         </div>
-      )}
+      </div>
     </nav>
   );
 };
