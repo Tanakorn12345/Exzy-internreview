@@ -1,4 +1,7 @@
 import React from 'react';
+import eatingImg from '../assets/eating.jpg';
+import minewImg from '../assets/minew.jpg';
+import eating1Img from '../assets/eating1.jpg';
 
 const Culture = () => {
   return (
@@ -14,17 +17,17 @@ const Culture = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[250px] md:auto-rows-[320px]">
           <div className="col-span-1 md:col-span-2 h-full bg-white rounded-2xl shadow-md overflow-hidden relative group border border-primary-500/20">
             <div className="absolute inset-0 bg-dark-500/10 group-hover:bg-dark-500/5 transition-colors duration-300 z-10 pointer-events-none"></div>
-            <img src="/src/assets/eating.jpg" alt="Office" className="w-full h-full object-cover" />
+            <img src={eatingImg} alt="Office" className="w-full h-full object-cover" />
           </div>
           
           <div className="col-span-1 md:col-span-1 h-full bg-white rounded-2xl shadow-md overflow-hidden relative group border border-primary-500/20">
              <div className="absolute inset-0 bg-dark-500/10 group-hover:bg-dark-500/5 transition-colors duration-300 z-10 pointer-events-none"></div>
-             <img src="/src/assets/minew.jpg" alt="Meeting" className="w-full h-full object-cover" />
+             <img src={minewImg} alt="Meeting" className="w-full h-full object-cover" />
           </div>
 
           <div className="col-span-1 md:col-span-1 h-full bg-white rounded-2xl shadow-md overflow-hidden relative group border border-primary-500/20 flex flex-col items-center justify-center text-primary-500/50 p-4 text-center">
              <div className="absolute inset-0 bg-dark-500/10 group-hover:bg-dark-500/5 transition-colors duration-300 z-10 pointer-events-none"></div>
-             <img src="/src/assets/eating1.jpg" alt="Activity" className="w-full h-full object-cover scale-110" />
+             <img src={eating1Img} alt="Activity" className="w-full h-full object-cover scale-110" />
           </div>
 
           <div className="col-span-1 md:col-span-2 h-full bg-dark-500 rounded-2xl shadow-md overflow-hidden p-8 flex flex-col justify-center relative">

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import exzyLogo from '../assets/logo exzy.jpg';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +27,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           <div className="flex-shrink-0 flex items-center gap-2">
-            <img src="/src/assets/logo exzy.jpg" alt="Exzy Logo" className="w-8 h-8 object-contain border border-white rounded-lg" />
+            <img src={exzyLogo} alt="Exzy Logo" className="w-8 h-8 object-contain border border-white rounded-lg" />
             <span className="font-semibold text-xl text-dark-500 border-l-2 border-primary-500 pl-2 ml-1">Intern Review</span>
           </div>
           

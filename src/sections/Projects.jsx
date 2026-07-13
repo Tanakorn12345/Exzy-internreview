@@ -1,5 +1,9 @@
 import React from 'react';
 import ProjectCard from '../components/ProjectCard';
+import { Calendar, Cloud, Shield, Wrench, Smartphone, Server } from 'lucide-react';
+import obsidianImg from '../assets/obsidian pic.png';
+import onsiteImg from '../assets/onsiteservice.jpg';
+import attendanceImg from '../assets/attandance.jpg';
 
 const Projects = () => {
   const projectsData = [
@@ -8,21 +12,21 @@ const Projects = () => {
       title: "การจัดทำคลังข้อมูลของบริษัทที่เกี่ยวกับนวัตกรรม Smart Office และ Smart Workplace",
       description: "ช่วยรวบรวมและบันทึกข้อมูลการทำงานเกี่ยวกับระบบ Smart Office และ Smart Workplace ลงในโปรแกรม Obsidian พร้อมจัดหมวดหมู่ข้อมูลให้เป็นระเบียบ เพื่อให้ค้นหาและนำไปใช้งานได้ง่าย รวมถึงใช้เป็นข้อมูลอ้างอิงสำหรับการทำงานในอนาคต",
       tags: ["Obsidian"],
-      imageSrc: "/src/assets/obsidian pic.png" 
+      imageSrc: obsidianImg 
     } , 
     {
       id: 2,
       title: "การติดตามหน้างานกับพี่เลี้ยง",
       description: "ติดตามพี่เลี้ยงลงพื้นที่เพื่อตรวจสอบ แก้ไขปัญหา และติดตั้งระบบให้กับลูกค้า พร้อมเรียนรู้ขั้นตอนการวิเคราะห์ปัญหาและการแก้ไขปัญหาในหน้างานจริง เช่น การตรวจสอบ hardware ที่หน้างาน , การอัพเดท license ของระบบหน้างาน",
       tags: ["Problem Solving", "Onsite Service"],    
-      imageSrc: "/src/assets/onsiteservice.jpg" 
+      imageSrc: onsiteImg 
     } , 
     {
       id: 3,
       title: "การลงแอพพลิเคชันลงเวลาและการลงทะเบียนเข้า-ออกงานของพนักงานให้กับลูกค้า",
       description: "เป็นการติดตั้งและตั้งค่าแอพพลิเคชันลงเวลาและการลงทะเบียนเข้า-ออกงานของพนักงานให้กับลูกค้า เพื่อให้พร้อมใช้งานทันที",
       tags: ["Intelligent Hub", "Access Control"],    
-      imageSrc: "/src/assets/attandance.jpg" 
+      imageSrc: attendanceImg 
     }
   ];
 

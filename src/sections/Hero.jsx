@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Briefcase , Settings , Users} from 'lucide-react';
+import exzyLogo from '../assets/logo exzy.jpg';
 
 
 const Hero = () => {
@@ -46,7 +47,7 @@ const Hero = () => {
               <div className="absolute inset-0 bg-primary-500 rounded-full blur-[40px] opacity-20 group-hover:opacity-40 transition-opacity duration-500"></div>
               <div className="w-64 h-64 md:w-80 md:h-80 bg-white rounded-full border-4 border-primary-500 shadow-xl overflow-hidden flex items-center justify-center relative z-10 transition-transform duration-500 hover:scale-105">
                 <img
-                  src={'/src/assets/logo exzy.jpg'}
+                  src={exzyLogo}
                   alt="Profile"
                   className="w-full h-full object-cover"
                 />

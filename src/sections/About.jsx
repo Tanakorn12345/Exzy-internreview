@@ -1,4 +1,5 @@
 import React from 'react';
+import insideOffice from '../assets/insideoffice.jpg';
 
 const About = () => {
   return (
@@ -9,7 +10,7 @@ const About = () => {
             <div className="absolute inset-0 bg-dark-500 rounded-2xl transform translate-x-4 translate-y-4 transition-transform group-hover:translate-x-2 group-hover:translate-y-2"></div>
             <div className="aspect-video bg-white rounded-2xl shadow-xl flex items-center justify-center border-2 border-primary-500 relative z-10 overflow-hidden">
               <div className="absolute inset-0 bg-primary-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <img src="/src/assets/insideoffice.jpg" alt="Exzy Office" className="object-cover w-full h-full" />
+              <img src={insideOffice} alt="Exzy Office" className="object-cover w-full h-full" />
             </div>
           </div>
           <div className="w-full md:w-1/2">
