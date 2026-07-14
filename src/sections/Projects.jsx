@@ -6,6 +6,7 @@ import onsiteImg from '../assets/onsite.jpg';
 import attendanceImg from '../assets/attandance1.jpg';
 import attendanceImg1 from '../assets/attandance2.jpg';
 import obsidianImg1 from '../assets/node obsidian.png';  
+import onsiteImg1 from '../assets/onsite2.jpg';
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
@@ -19,10 +20,10 @@ const Projects = () => {
     } , 
     {
       id: 2,
-      title: "การ On-site Support ร่วมกับพี่เลี้ยง",
+      title: "การ On-site Support กับพี่เลี้ยง",
       description: "ลงพื้นที่ปฏิบัติงานร่วมกับพี่เลี้ยงเพื่อตรวจสอบ แก้ไขปัญหา และติดตั้งระบบให้ลูกค้า พร้อมเรียนรู้การวิเคราะห์ปัญหาหน้างานจริง เช่น การตรวจสอบสภาพและการทำงานของ hardware หน้างาน และการอัปเดต license ของระบบให้เป็นปัจจุบัน เพื่อให้ระบบสามารถใช้งานได้อย่างต่อเนื่องและมีประสิทธิภาพ",
       tags: ["Problem Solving", "Onsite Service"],    
-      images: [onsiteImg]
+      images: [onsiteImg1, onsiteImg]
     } , 
     {
       id: 3,
