@@ -1,6 +1,5 @@
 import React from 'react';
 import ProjectCard from '../components/ProjectCard';
-import { Calendar, Cloud, Shield, Wrench, Smartphone, Server } from 'lucide-react';
 import obsidianImg from '../assets/obsidian pic.png';
 import onsiteImg from '../assets/onsiteservice.jpg';
 import attendanceImg from '../assets/attandance.jpg';

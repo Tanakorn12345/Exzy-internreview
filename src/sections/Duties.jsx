@@ -1,5 +1,5 @@
 import React from 'react';
-import { Server, MonitorSmartphone, Wifi, ShieldCheck , PencilSparkles , Database} from 'lucide-react';
+import { MonitorSmartphone, ShieldCheck , PencilSparkles , Database} from 'lucide-react';
 import DutyCard from '../components/DutyCard';
 
 const Duties = () => {
