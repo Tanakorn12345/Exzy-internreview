@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Briefcase , Settings , Users} from 'lucide-react';
 import meatexzy from '../assets/meatexzy1.jpg';
