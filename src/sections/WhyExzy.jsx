@@ -1,5 +1,5 @@
 import React from 'react';
-import Exzyoffice from '../assets/Exzyoffice.png';
+import Exzyoffice from '../assets/why-exzy-office.jpg';
 
 const WhyExzy = () => {
   return (
@@ -30,7 +30,7 @@ const WhyExzy = () => {
                 {/* Reason 2 */}
                 <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl shadow-lg border border-white/20 relative overflow-hidden group hover:border-primary-400 hover:bg-white/15 transition-all">
                    <div className="absolute top-0 left-0 w-2 h-full bg-primary-400 group-hover:w-3 transition-all"></div>
-                   <h3 className="text-lg font-bold text-white mb-2 ml-2">เทคโนโลยีทันสมัยของผลิตภัณฑ์</h3>
+                   <h3 className="text-lg font-bold text-white mb-2 ml-2">ผลิตภัณฑ์ที่ทันสมัย</h3>
                    <p className="text-primary-50/80 leading-relaxed ml-2">
                       เป็นบริษัทเกี่ยวกับการผลิตระบบ smart office และ smart workplace ที่ค่อนข้างครบวงจร และเป็นที่ต้องการของตลาดอย่างแน่นอนในอนาคต
                    </p>
@@ -46,8 +46,8 @@ const WhyExzy = () => {
             </div>
           </div>
 
-          <div className="w-full lg:w-1/2 flex justify-center lg:justify-end lg:pl-8">
-             <div className="w-64 h-64 md:w-80 md:h-80 aspect-square bg-dark-400 rounded-full border-8 border-primary-500/30 shadow-2xl relative overflow-hidden group">
+          <div className="w-full lg:w-1/2 flex justify-center lg:justify-end lg:pl-8 mt-12 lg:mt-0">
+             <div className="w-full max-w-md lg:max-w-lg aspect-[4/3] bg-dark-400 rounded-3xl border-8 border-primary-500/20 shadow-2xl relative overflow-hidden group">
                  <img
                    src={Exzyoffice}
                    alt="Exzy Office"

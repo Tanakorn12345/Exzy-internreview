@@ -1,5 +1,5 @@
 import React from 'react';
-import insideOffice from '../assets/insideoffice.jpg';
+import insideOffice from '../assets/smart technology exzy.png';
 
 const About = () => {
   return (
