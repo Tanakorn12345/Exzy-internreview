@@ -32,7 +32,7 @@ const WhyExzy = () => {
                    <div className="absolute top-0 left-0 w-2 h-full bg-primary-400 group-hover:w-3 transition-all"></div>
                    <h3 className="text-lg font-bold text-white mb-2 ml-2">ผลิตภัณฑ์ที่ทันสมัย</h3>
                    <p className="text-primary-50/80 leading-relaxed ml-2">
-                      เป็นบริษัทเกี่ยวกับการผลิตระบบ smart office และ smart workplace ที่ค่อนข้างครบวงจร และเป็นที่ต้องการของตลาดอย่างแน่นอนในอนาคต
+                      เป็นบริษัทเกี่ยวกับการผลิตระบบ smart office และ smart workplace ที่ครบวงจร และเป็นที่ต้องการของออฟฟิศสมัยใหม่
                    </p>
                 </div>
                 {/* Reason 3 */}

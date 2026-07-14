@@ -1,26 +1,26 @@
 import React, { useState } from 'react';
 import ProjectCard from '../components/ProjectCard';
 import ProjectModal from '../components/ProjectModal';
-import obsidianImg from '../assets/obsidian pic.png';
-import onsiteImg from '../assets/onsiteservice.jpg';
-import attendanceImg from '../assets/attandance.jpg';
-import attendanceImg1 from '../assets/attandance-1.jpg';
-import obsidianImg1 from '../assets/obsidian user manual.png';  
+import obsidianImg from '../assets/obsidian workflow.png';
+import onsiteImg from '../assets/onsite.jpg';
+import attendanceImg from '../assets/attandance1.jpg';
+import attendanceImg1 from '../assets/attandance2.jpg';
+import obsidianImg1 from '../assets/node obsidian.png';  
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
   const projectsData = [
     {
       id: 1,
-      title: "การจัดทำคลังข้อมูลของบริษัทที่เกี่ยวกับนวัตกรรม Smart Office และ Smart Workplace",
-      description: "ช่วยรวบรวมและบันทึกข้อมูลการทำงานเกี่ยวกับระบบ Smart Office และ Smart Workplace ลงในโปรแกรม Obsidian พร้อมจัดหมวดหมู่ข้อมูลให้เป็นระเบียบ เพื่อให้ค้นหาและนำไปใช้งานได้ง่าย รวมถึงใช้เป็นข้อมูลอ้างอิงสำหรับการทำงานในอนาคต",
+      title: "การจัดทำคลังข้อมูล (Knowledge Base) เกี่ยวกับผลิตภัณฑ์ Smart Office และ Smart Workplace ด้วยโปรแกรม Obsidian",
+      description: "รวบรวมและบันทึกข้อมูลการปฏิบัติงานที่เกี่ยวข้องกับระบบ Smart Office และ Smart Workplace ลงในโปรแกรม Obsidian โดยจัดหมวดหมู่ข้อมูลอย่างเป็นระบบและเชื่อมโยงเนื้อหาที่เกี่ยวข้องเข้าด้วยกัน เพื่อให้สามารถค้นหาและเรียกใช้งานข้อมูลได้อย่างสะดวกและรวดเร็ว",
       tags: ["Obsidian"],
       images: [obsidianImg , obsidianImg1]
     } , 
     {
       id: 2,
-      title: "การ On site Support กับพี่เลี้ยง",
-      description: "ติดตามพี่เลี้ยงลงพื้นที่เพื่อตรวจสอบ แก้ไขปัญหา และติดตั้งระบบให้กับลูกค้า พร้อมเรียนรู้ขั้นตอนการวิเคราะห์ปัญหาและการแก้ไขปัญหาในหน้างานจริง เช่น การตรวจสอบ hardware ที่หน้างาน , การอัพเดท license ของระบบหน้างาน",
+      title: "การ On-site Support ร่วมกับพี่เลี้ยง",
+      description: "ลงพื้นที่ปฏิบัติงานร่วมกับพี่เลี้ยงเพื่อตรวจสอบ แก้ไขปัญหา และติดตั้งระบบให้ลูกค้า พร้อมเรียนรู้การวิเคราะห์ปัญหาหน้างานจริง เช่น การตรวจสอบสภาพและการทำงานของ hardware หน้างาน และการอัปเดต license ของระบบให้เป็นปัจจุบัน เพื่อให้ระบบสามารถใช้งานได้อย่างต่อเนื่องและมีประสิทธิภาพ",
       tags: ["Problem Solving", "Onsite Service"],    
       images: [onsiteImg]
     } , 

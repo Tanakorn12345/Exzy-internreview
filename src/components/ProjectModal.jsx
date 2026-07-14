@@ -54,7 +54,7 @@ const ProjectModal = ({ project, onClose }) => {
                   <img 
                     src={images[currentIndex]} 
                     alt={`${project.title} - ${currentIndex + 1}`} 
-                    className="w-full h-full object-cover object-center"
+                    className="w-full h-full object-contain object-center"
                   />
                   
                   {/* Navigation Arrows */}
