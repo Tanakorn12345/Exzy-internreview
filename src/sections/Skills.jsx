@@ -17,7 +17,7 @@ const Skills = () => {
           <div className="w-full md:w-1/3">
             <h2 className="text-3xl font-bold text-dark-500 mb-4 inline-block border-b-4 border-primary-500 pb-2">ทักษะที่ได้รับ (Skills)</h2>
 
-            <p className="text-lg text-dark-500/80 mb-6 leading-relaxed">
+            <p className="text-base text-dark-500/80 mb-6 leading-relaxed">
               จากการลงพื้นที่จริงและจัดทำคลังข้อมูลของบริษัท ทำให้มีความเข้าใจในระบบ Smart Office มากขึ้น ได้เรียนรู้การใช้เครื่องมือ (Tools) ต่างๆ รวมถึงได้พัฒนา Soft Skills ด้านการสื่อสารและการแก้ปัญหาเฉพาะหน้า
             </p>
           </div>

@@ -10,10 +10,10 @@ const Conclusion = () => {
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
         <Quote className="w-16 h-16 text-primary-500 mx-auto mb-8 opacity-40" />
-        <h2 className="text-3xl md:text-4xl font-bold mb-8 leading-tight text-dark-500">
-          "ประสบการณ์จากการได้ลงมือทำและแก้ปัญหาหน้างานจริง"
+        <h2 className="text-2xl md:text-3xl font-bold mb-8 leading-tight text-dark-500">
+          "ประสบการณ์ที่คุ้มค่า คือการได้ลงมือทำและแก้ปัญหาหน้างานจริง"
         </h2>
-        <p className="text-xl text-dark-500/80 leading-relaxed mb-12 max-w-3xl mx-auto">
+        <p className="text-lg text-dark-500/80 leading-relaxed mb-12 max-w-3xl mx-auto">
           การฝึกงานตำแหน่ง IT Support ที่ Exzy ให้ประสบการณ์ที่ดีมากครับ ผมได้เรียนรู้ตั้งแต่ระบบ Smart Office สมัยใหม่ การดูแลฮาร์ดแวร์ ไปจนถึงการลงพื้นที่หน้างานจริงร่วมกับพี่เลี้ยง และความเป็นกันเองภายในทีม นอกจากทักษะการใช้ Tools ต่างๆ ที่เพิ่มขึ้นแล้ว ยังได้พัฒนาทักษะการสื่อสารและการปรับตัว (Soft Skills) อีกด้วย สิ่งที่ประทับใจที่สุดคือวัฒนธรรมองค์กรที่เปิดกว้างและพี่ ที่คอยสอนงานอย่างเป็นกันเอง
         </p>
 
