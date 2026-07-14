@@ -25,7 +25,7 @@ const Duties = () => {
     {
       id: 4,
       icon: <ShieldCheck className="w-6 h-6" />,
-      title: "การปฏิบัติงานจริงในพื้นที่ (On-site Support)",
+      title: "การปฏิบัติงานในพื้นที่ (On-site Support)",
       desc: "ติดตามพี่เลี้ยงลงพื้นที่หน้างานจริงเพื่อรับทราบและหาแนวทางการแก้ไขปัญหา"
     }
   ];
