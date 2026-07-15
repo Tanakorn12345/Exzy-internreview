@@ -1,9 +1,41 @@
-import React from 'react';
-import eatingImg from '../assets/eating.jpg';
+import React, { useState } from 'react';
+import CultureModal from '../components/CultureModal';
+import eatingImg from '../assets/insideoffice-heic.jpg';
 import minewImg from '../assets/minew.jpg';
-import eating1Img from '../assets/eating1.jpg';
+import eating1Img from '../assets/eating.jpg';
 
 const Culture = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [initialSlide, setInitialSlide] = useState(0);
+
+  const cultureData = [
+    {
+      id: 1,
+      src: eatingImg,
+      title: "การทำงานในออฟฟิศ",
+      description: "เป็นบรรยากาศที่ผมเข้ามาทำงานในทุกวัน เวลาไม่ได้่ออกไป on site service ครับ โดยที่พี่ๆจะคุยกันทุกเช้า เรียกว่า stand up meeting เพื่ออัปเดตงานที่ทำอยู่และที่จะทำในวันนี้ หรือแลกเปลี่ยนความคิดเห็นกันครับ ซึ่งก็จะมีการอัพเดทงานที่ทำในวันนี้ของผมด้วยครับ",
+      gridClass: "col-span-1 md:col-span-2"
+    },
+    {
+      id: 2,
+      src: minewImg,
+      title: "ดูระบบการจัดการ Minew",
+      description: "เป็นการดูระบบการจัดการ minew และ gateway ครับ ซึ่งเป็น 1 ใน product ของ exzy สำหรับระบบ co-desk ซึ่งผมได้ช่วยดูทราฟฟิกต่างๆ ของ minew ระหว่างการทดสอบ ว่ามีปัญหาอะไรเกิดขึ้นและสามารถแก้ไขได้อย่างไร",
+      gridClass: "col-span-1 md:col-span-1"
+    },
+    {
+      id: 3,
+      src: eating1Img,
+      title: "พี่ๆในทีมเลี้ยงอำลาสำหรับคนฝึกงานจบ",
+      description: "พี่ๆในทีมเลี้ยงอำลาสำหรับคนฝึกงานจบ ให้ทุกคนเลยที่เข้ามาฝึกงานกับ exzy ถือเป็นธรรมเนียมที่ดีมากครับ",
+      gridClass: "col-span-1 md:col-span-1"
+    }
+  ];
+
+  const openModal = (index) => {
+    setInitialSlide(index);
+    setIsModalOpen(true);
+  };
   return (
     <section id="culture" className="py-20 bg-primary-500/5 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -15,20 +47,23 @@ const Culture = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[250px] md:auto-rows-[320px]">
-          <div className="col-span-1 md:col-span-2 h-full bg-white rounded-2xl shadow-md overflow-hidden relative group border border-primary-500/20">
-            <div className="absolute inset-0 bg-dark-500/10 group-hover:bg-dark-500/5 transition-colors duration-300 z-10 pointer-events-none"></div>
-            <img src={eatingImg} alt="Office" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-          </div>
-          
-          <div className="col-span-1 md:col-span-1 h-full bg-white rounded-2xl shadow-md overflow-hidden relative group border border-primary-500/20">
-             <div className="absolute inset-0 bg-dark-500/10 group-hover:bg-dark-500/5 transition-colors duration-300 z-10 pointer-events-none"></div>
-             <img src={minewImg} alt="Meeting" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-          </div>
-
-          <div className="col-span-1 md:col-span-1 h-full bg-white rounded-2xl shadow-md overflow-hidden relative group border border-primary-500/20 flex flex-col items-center justify-center text-primary-500/50 p-4 text-center">
-             <div className="absolute inset-0 bg-dark-500/10 group-hover:bg-dark-500/5 transition-colors duration-300 z-10 pointer-events-none"></div>
-             <img src={eating1Img} alt="Activity" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-          </div>
+          {cultureData.map((item, index) => (
+            <div 
+              key={item.id} 
+              onClick={() => openModal(index)}
+              className={`${item.gridClass} h-full bg-white rounded-2xl shadow-md overflow-hidden relative group border border-primary-500/20 cursor-pointer`}
+            >
+              {/* Gradient overlay and Caption */}
+              <div className="absolute inset-0 bg-gradient-to-t from-dark-500/90 via-dark-500/20 to-transparent z-10 flex flex-col justify-end p-5 opacity-90 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                  <h3 className="text-white font-bold text-xl drop-shadow-md mb-1">{item.title}</h3>
+                  <p className="text-primary-50 text-sm drop-shadow-md line-clamp-2 leading-relaxed">{item.description}</p>
+                </div>
+              </div>
+              
+              <img src={item.src} alt={item.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+            </div>
+          ))}
 
           <div className="col-span-1 md:col-span-2 h-full bg-dark-500 rounded-2xl shadow-md overflow-hidden p-8 flex flex-col justify-center relative">
             <div className="absolute top-0 right-0 w-32 h-32 bg-primary-500 rounded-full filter blur-[50px] opacity-20"></div>
@@ -38,6 +73,12 @@ const Culture = () => {
             </p>
           </div>
         </div>
+        <CultureModal 
+          items={cultureData}
+          initialIndex={initialSlide}
+          isOpen={isModalOpen}
+          onClose={() => setIsModalOpen(false)}
+        />
       </div>
     </section>
   );
