@@ -10,20 +10,15 @@ const Duties = () => {
       title: "ศึกษาอุปกรณ์ภายในและระบบจัดการ",
       desc: "ศึกษาอุปกรณ์ภายในบริษัท เช่น เครื่อง MIT , เครื่อง Attandance , เครื่อง E-ink"
     },
+   
     {
       id: 2,
-      icon: <PencilSparkles className="w-6 h-6" />,
-      title: "การแก้ไขปัญหาอุปกรณ์เบื้องต้น",
-      desc: "การแก้ไขและดูแลอุปกรณ์เบื้องต้นเพื่อส่งมอบต่อไป"
-    },
-    {
-      id: 3,
       icon: <Database className="w-6 h-6" />,
-      title: "จัดทำการเก็บคลังข้อมูลของผลิตภัณฑ์",
+      title: "จัดทำการเก็บคลังข้อมูลของผลิตภัณฑ์ด้วยโปรแกรม Obsidian",
       desc: "เป็นการจัดเก็บคลังข้อมูลของผลิตภัณฑ์เพื่อนำไปใช้ในการค้นหาและอ้างอิงได้"
     },
     {
-      id: 4,
+      id: 3,
       icon: <ShieldCheck className="w-6 h-6" />,
       title: "การปฏิบัติงานในพื้นที่ (On-site Support)",
       desc: "การลงพื้นที่หน้างานจริงกับพี่เลี้ยงเพื่อรับทราบและหาแนวทางการแก้ไขปัญหา"
@@ -40,14 +35,15 @@ const Duties = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="flex flex-wrap justify-center gap-6 md:gap-8">
           {tasks.map(task => (
-            <DutyCard 
-              key={task.id}
-              icon={task.icon}
-              title={task.title}
-              description={task.desc}
-            />
+            <div key={task.id} className="w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] flex">
+              <DutyCard 
+                icon={task.icon}
+                title={task.title}
+                description={task.desc}
+              />
+            </div>
           ))}
         </div>
       </div>

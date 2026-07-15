@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import ProjectCard from '../components/ProjectCard';
 import ProjectModal from '../components/ProjectModal';
-import obsidianImg from '../assets/obsidian workflow.png';
 import onsiteImg from '../assets/onsite.jpg';
 import attendanceImg from '../assets/attandance1.jpg';
 import attendanceImg1 from '../assets/attandance2.jpg';
 import obsidianImg1 from '../assets/node obsidian.png';  
 import onsiteImg1 from '../assets/onsite2.jpg';
+import obsidianflow from '../assets/obsidian_kb_creation_flow.jpg';
+import onsiteflow from '../assets/onsite_support_flow.jpg';
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
@@ -16,14 +17,14 @@ const Projects = () => {
       title: "การจัดทำคลังข้อมูล (Knowledge Base) เกี่ยวกับผลิตภัณฑ์ Smart Office และ Smart Workplace ด้วยโปรแกรม Obsidian",
       description: "รวบรวมและบันทึกข้อมูลการปฏิบัติงานที่เกี่ยวข้องกับระบบ Smart Office และ Smart Workplace ลงในโปรแกรม Obsidian โดยจัดหมวดหมู่ข้อมูลอย่างเป็นระบบและเชื่อมโยงเนื้อหาที่เกี่ยวข้องเข้าด้วยกัน เพื่อให้สามารถค้นหาและเรียกใช้งานข้อมูลได้อย่างสะดวกและรวดเร็ว",
       tags: ["Obsidian"],
-      images: [obsidianImg , obsidianImg1]
+      images: [obsidianImg1 , obsidianflow]
     } , 
     {
       id: 2,
       title: "การ On-site Support กับพี่เลี้ยง",
       description: "ลง On-site Support กับพี่เลี้ยงเพื่อตรวจสอบ แก้ไขปัญหา และติดตั้งระบบให้ลูกค้า พร้อมเรียนรู้การวิเคราะห์ปัญหาหน้างานจริง เช่น การตรวจสอบสภาพและการทำงานของ hardware หน้างาน และการอัปเดต license ของระบบให้เป็นปัจจุบัน เพื่อให้ระบบสามารถใช้งานได้อย่างต่อเนื่องและมีประสิทธิภาพ",
       tags: ["Problem Solving", "Onsite Service"],    
-      images: [onsiteImg1, onsiteImg]
+      images: [onsiteImg1, onsiteImg, onsiteflow]
     } , 
     {
       id: 3,
