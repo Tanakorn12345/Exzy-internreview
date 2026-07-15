@@ -5,22 +5,41 @@ import { X, ChevronLeft, ChevronRight, ImageIcon } from 'lucide-react';
 
 const ProjectModal = ({ project, onClose }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [direction, setDirection] = useState(0);
 
   // Reset image index when opening a new project
   useEffect(() => {
     setCurrentIndex(0);
+    setDirection(0);
   }, [project]);
+
+  const slideVariants = {
+    enter: (direction) => ({
+      x: direction > 0 ? '100%' : '-100%',
+      opacity: 0
+    }),
+    center: {
+      x: 0,
+      opacity: 1
+    },
+    exit: (direction) => ({
+      x: direction < 0 ? '100%' : '-100%',
+      opacity: 0
+    })
+  };
 
   const images = project?.images || [];
   const hasMultipleImages = images.length > 1;
 
   const handleNext = (e) => {
     e.stopPropagation();
+    setDirection(1);
     setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
   };
 
   const handlePrev = (e) => {
     e.stopPropagation();
+    setDirection(-1);
     setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
   };
 
@@ -51,11 +70,20 @@ const ProjectModal = ({ project, onClose }) => {
             <div className="w-full md:w-3/5 bg-dark-500 relative flex items-center justify-center min-h-[300px] md:min-h-0 overflow-hidden">
               {images.length > 0 ? (
                 <>
-                  <img 
-                    src={images[currentIndex]} 
-                    alt={`${project.title} - ${currentIndex + 1}`} 
-                    className="w-full h-full object-contain object-center"
-                  />
+                  <AnimatePresence initial={false} custom={direction}>
+                    <motion.img 
+                      key={currentIndex}
+                      custom={direction}
+                      variants={slideVariants}
+                      initial="enter"
+                      animate="center"
+                      exit="exit"
+                      transition={{ x: { type: "tween", ease: "easeInOut", duration: 0.3 }, opacity: { duration: 0.3 } }}
+                      src={images[currentIndex]} 
+                      alt={`${project.title} - ${currentIndex + 1}`} 
+                      className="absolute w-full h-full object-contain object-center"
+                    />
+                  </AnimatePresence>
                   
                   {/* Navigation Arrows */}
                   {hasMultipleImages && (
@@ -78,7 +106,10 @@ const ProjectModal = ({ project, onClose }) => {
                         {images.map((_, idx) => (
                           <button 
                             key={idx}
-                            onClick={() => setCurrentIndex(idx)}
+                            onClick={() => {
+                              setDirection(idx > currentIndex ? 1 : -1);
+                              setCurrentIndex(idx);
+                            }}
                             className={`w-2.5 h-2.5 rounded-full transition-all ${idx === currentIndex ? 'bg-primary-500 w-6' : 'bg-white/50 hover:bg-white'}`}
                           />
                         ))}

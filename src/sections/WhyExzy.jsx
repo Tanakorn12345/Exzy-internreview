@@ -40,7 +40,7 @@ const WhyExzy = () => {
                    <div className="absolute top-0 left-0 w-2 h-full bg-primary-400 group-hover:w-3 transition-all"></div>
                    <h3 className="text-lg font-bold text-white mb-2 ml-2">วิสัยทัศน์และวัฒนธรรมองค์กรที่ทันสมัย</h3>
                    <p className="text-primary-50/80 leading-relaxed ml-2">
-                      ชื่นชอบในรูปแบบการทำงานและวัฒนธรรมองค์กรของ Exzy ที่เปิดกว้างและดูทันสมัย ซึ่งเป็นสภาพแวดล้อมที่เหมาะสมอย่างยิ่งสำหรับการเริ่มต้นเรียนรู้และพัฒนาศักยภาพของตนเอง
+                      ชื่นชอบในรูปแบบการทำงานและวัฒนธรรมองค์กรของ Exzy ที่เปิดกว้างและดูทันสมัย รับฟังความคิดเห็นที่หลากหลายเพื่อนำมาปรับใช้กับงาน
                    </p>
                 </div>
             </div>

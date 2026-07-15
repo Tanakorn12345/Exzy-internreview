@@ -5,22 +5,41 @@ import { X, ChevronLeft, ChevronRight, ImageIcon } from 'lucide-react';
 
 const CultureModal = ({ items, initialIndex = 0, isOpen, onClose }) => {
   const [currentIndex, setCurrentIndex] = useState(initialIndex);
+  const [direction, setDirection] = useState(0);
 
   useEffect(() => {
     if (isOpen) {
       setCurrentIndex(initialIndex);
+      setDirection(0);
     }
   }, [isOpen, initialIndex]);
+
+  const slideVariants = {
+    enter: (direction) => ({
+      x: direction > 0 ? '100%' : '-100%',
+      opacity: 0
+    }),
+    center: {
+      x: 0,
+      opacity: 1
+    },
+    exit: (direction) => ({
+      x: direction < 0 ? '100%' : '-100%',
+      opacity: 0
+    })
+  };
 
   if (!isOpen || !items || items.length === 0) return null;
 
   const handleNext = (e) => {
     e.stopPropagation();
+    setDirection(1);
     setCurrentIndex((prev) => (prev === items.length - 1 ? 0 : prev + 1));
   };
 
   const handlePrev = (e) => {
     e.stopPropagation();
+    setDirection(-1);
     setCurrentIndex((prev) => (prev === 0 ? items.length - 1 : prev - 1));
   };
 
@@ -52,11 +71,20 @@ const CultureModal = ({ items, initialIndex = 0, isOpen, onClose }) => {
           <div className="w-full md:w-3/5 bg-dark-500 relative flex items-center justify-center min-h-[300px] md:min-h-0 overflow-hidden">
             {currentItem.src ? (
               <>
-                <img 
-                  src={currentItem.src} 
-                  alt={currentItem.title || "Culture Image"} 
-                  className="w-full h-full object-contain object-center"
-                />
+                <AnimatePresence initial={false} custom={direction}>
+                  <motion.img 
+                    key={currentIndex}
+                    custom={direction}
+                    variants={slideVariants}
+                    initial="enter"
+                    animate="center"
+                    exit="exit"
+                    transition={{ x: { type: "tween", ease: "easeInOut", duration: 0.3 }, opacity: { duration: 0.3 } }}
+                    src={currentItem.src} 
+                    alt={currentItem.title || "Culture Image"} 
+                    className="absolute w-full h-full object-contain object-center"
+                  />
+                </AnimatePresence>
                 
                 {/* Navigation Arrows */}
                 {items.length > 1 && (
@@ -79,7 +107,10 @@ const CultureModal = ({ items, initialIndex = 0, isOpen, onClose }) => {
                       {items.map((_, idx) => (
                         <button 
                           key={idx}
-                          onClick={() => setCurrentIndex(idx)}
+                          onClick={() => {
+                            setDirection(idx > currentIndex ? 1 : -1);
+                            setCurrentIndex(idx);
+                          }}
                           className={`w-2.5 h-2.5 rounded-full transition-all ${idx === currentIndex ? 'bg-primary-500 w-6' : 'bg-white/50 hover:bg-white'}`}
                         />
                       ))}
@@ -101,15 +132,23 @@ const CultureModal = ({ items, initialIndex = 0, isOpen, onClose }) => {
               บรรยากาศการทำงาน
             </div>
             
-            <h2 className="text-2xl md:text-3xl font-bold text-dark-500 mb-6 leading-tight">
-              {currentItem.title || "[รอใส่หัวข้อ]"}
-            </h2>
-            
-            <div>
-              <p className="text-base text-dark-500/80 leading-relaxed whitespace-pre-line">
-                {currentItem.description || "[รอใส่คำบรรยายใต้ภาพ]"}
-              </p>
-            </div>
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={currentIndex}
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -10 }}
+                transition={{ duration: 0.25 }}
+              >
+                <h2 className="text-2xl md:text-3xl font-bold text-dark-500 mb-6 leading-tight">
+                  {currentItem.title || "[รอใส่หัวข้อ]"}
+                </h2>
+                
+                <p className="text-base text-dark-500/80 leading-relaxed whitespace-pre-line">
+                  {currentItem.description || "[รอใส่คำบรรยายใต้ภาพ]"}
+                </p>
+              </motion.div>
+            </AnimatePresence>
           </div>
 
         </motion.div>
