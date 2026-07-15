@@ -20,7 +20,7 @@ const About = () => {
               Exzy (บริษัท เอ็กซ์ซี จำกัด) เป็นผู้นำอันดับ 1 ด้านการพัฒนาเทคโนโลยี Smart Office และ Smart Workplace ครบวงจรในประเทศไทย โดยโดดเด่นเรื่องการสร้างนวัตกรรม Interactive และ Futuristic Solution
             </p>
             <p className="text-base text-dark-500/80 leading-relaxed">
-             โดยมีหลายโซลูชันที่ตอบโจทย์การทำงานในยุคดิจิทัล เช่น ระบบจองห้องประชุมอัจฉริยะ (Smart Meeting Room Booking System), ระบบการจองโต๊ะทำงาน (Smart Workstation Booking System)
+             โดยมีหลายโซลูชันที่ตอบโจทย์การทำงานในยุคดิจิทัล เช่น Meet in Touch (ระบบจองห้องประชุมอัจฉริยะ), Codesk (ระบบจองโต๊ะทำงาน), Locker Space (ระบบตู้ล็อกเกอร์อัจฉริยะ)
             </p>
           </div>
         </div>
