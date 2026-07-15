@@ -1,5 +1,5 @@
 import React from 'react';
-import Exzyoffice from '../assets/why-exzy-office.jpg';
+import Exzyoffice from '../assets/whyexzy.jpg';
 
 const WhyExzy = () => {
   return (
@@ -46,12 +46,12 @@ const WhyExzy = () => {
             </div>
           </div>
 
-          <div className="w-full lg:w-1/2 flex justify-center lg:justify-end lg:pl-8 mt-12 lg:mt-0">
-             <div className="w-full max-w-md lg:max-w-lg aspect-[4/3] bg-dark-400 rounded-3xl border-8 border-primary-500/20 shadow-2xl relative overflow-hidden group">
+          <div className="w-full lg:w-1/2 flex justify-center items-center lg:pl-8 mt-12 lg:mt-0">
+             <div className="w-full bg-dark-400 rounded-3xl border-8 border-primary-500/20 shadow-2xl relative overflow-hidden group">
                  <img
                    src={Exzyoffice}
                    alt="Exzy Office"
-                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                   className="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-105"
                  />
              </div>
           </div>
