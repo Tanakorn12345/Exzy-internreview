@@ -28,7 +28,7 @@ const Projects = () => {
     {
       id: 3,
       title: "การลงระบบ Attendance ให้กับลูกค้า",
-      description: "เป็นการติดตั้งและตั้งค่าเบื้องต้น ระบบ Attendance ที่ใช้สำหรับการลงเวลาและการลงทะเบียนเข้า-ออกงานของพนักงาน เพื่อให้พร้อมใช้งาน",
+      description: "เป็นการติดตั้งและตั้งค่าเบื้องต้นของระบบ Attendance ที่ใช้สำหรับการลงเวลา เพื่อให้พร้อมใช้งาน โดยมี Intelligent Hub เป็นตัวกลางในการเชื่อมต่อและเข้าถึงข้อมูลขององค์กรนั้นๆได้ ",
       tags: ["Intelligent Hub", "Access Control"],    
       images: [attendanceImg, attendanceImg1]
     }

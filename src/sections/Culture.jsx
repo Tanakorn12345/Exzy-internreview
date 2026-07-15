@@ -67,7 +67,7 @@ const Culture = () => {
 
           <div className="col-span-1 md:col-span-2 h-full bg-dark-500 rounded-2xl shadow-md overflow-hidden p-8 flex flex-col justify-center relative">
             <div className="absolute top-0 right-0 w-32 h-32 bg-primary-500 rounded-full filter blur-[50px] opacity-20"></div>
-            <h3 className="text-2xl font-bold text-white mb-4 z-10">สิ่งที่ประทับใจที่สุด</h3>
+            <h3 className="text-2xl font-bold text-white mb-4 z-10">สิ่งที่ประทับใจ</h3>
             <p className="text-primary-100 text-base leading-relaxed z-10 overflow-y-auto pr-2 custom-scrollbar">
               มีความประทับใจ รู้สึกพี่ๆใจดี สอนงานทำให้เข้าใจง่าย และให้คำแนะนำที่ดีในการทำงาน ทำให้รู้สึกสนุกที่ได้เรียนรู้ ได้เรียนรู้ปัญหาหน้างาน ได้สอนงานจริงที่สามารถเอาไปใช้ในอนาคตได้ เข้าใจปัญหาในหน้างานและการรับมือ
             </p>
