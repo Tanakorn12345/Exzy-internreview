@@ -8,6 +8,7 @@ import obsidianImg1 from '../assets/node obsidian.png';
 import onsiteImg1 from '../assets/onsite2.jpg';
 import obsidianflow from '../assets/obsidian_kb_creation_flow.jpg';
 import onsiteflow from '../assets/onsite_support_flow.jpg';
+import attendanceflow from '../assets/attendance_app_install_flow.jpg';
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
@@ -31,7 +32,7 @@ const Projects = () => {
       title: "การลงระบบ Attendance ให้กับลูกค้า",
       description: "เป็นการติดตั้งและตั้งค่าเบื้องต้นของระบบ Attendance สำหรับการลงเวลาเข้า–ออกงาน โดยใช้ Intelligent Hub เป็นศูนย์กลางในการบริหารจัดการระบบ การตั้งค่า และการจัดการข้อมูลของแต่ละองค์กร เพื่อให้ระบบพร้อมสำหรับการใช้งานจริง",
       tags: ["Intelligent Hub", "Access Control"],    
-      images: [attendanceImg, attendanceImg1]
+      images: [attendanceImg, attendanceImg1, attendanceflow]
     }
   ];
 

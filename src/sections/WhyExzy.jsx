@@ -19,28 +19,27 @@ const WhyExzy = () => {
                 {/* Reason 1 */}
                 <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl shadow-lg border border-white/20 relative overflow-hidden group hover:border-primary-400 hover:bg-white/15 transition-all">
                    <div className="absolute top-0 left-0 w-2 h-full bg-primary-400 group-hover:w-3 transition-all"></div>
-                   <h3 className="text-lg font-bold text-white mb-2 ml-2">สถานที่
-                    ทำงานใจกลางเมืองที่สะดวกต่อการเดินทาง
+                   <h3 className="text-lg font-bold text-white mb-2 ml-2">ได้เรียนรู้จากการปฏิบัติงานจริง
                    </h3>
                    <p className="text-primary-50/80 leading-relaxed ml-2">
-                      สถานที่ทำงานตั้งอยู่ใจกลางเมือง ทำให้สะดวกต่อการเดินทางและเข้าถึงได้ง่าย
+                      มีโอกาสร่วมติดตั้ง การตั้งค่าระบบ และออกปฏิบัติงานหน้างานกับพี่เลี้ยง ทำให้ได้เรียนรู้กระบวนการทำงานจริง
                    </p>
                 </div>
                 
                 {/* Reason 2 */}
                 <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl shadow-lg border border-white/20 relative overflow-hidden group hover:border-primary-400 hover:bg-white/15 transition-all">
                    <div className="absolute top-0 left-0 w-2 h-full bg-primary-400 group-hover:w-3 transition-all"></div>
-                   <h3 className="text-lg font-bold text-white mb-2 ml-2">ผลิตภัณฑ์ที่ทันสมัย</h3>
+                   <h3 className="text-lg font-bold text-white mb-2 ml-2">พี่เลี้ยงและทีมพร้อมให้คำแนะนำ</h3>
                    <p className="text-primary-50/80 leading-relaxed ml-2">
-                      เป็นบริษัทเกี่ยวกับการผลิตระบบ smart office และ smart workplace ที่ครบวงจร และเป็นที่ต้องการของออฟฟิศสมัยใหม่
+บรรยากาศการทำงานเป็นกันเอง สามารถสอบถามและขอคำแนะนำได้ตลอด ทำให้กล้าลองทำงานและเรียนรู้สิ่งใหม่ ๆ
                    </p>
                 </div>
                 {/* Reason 3 */}
                 <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl shadow-lg border border-white/20 relative overflow-hidden group hover:border-primary-400 hover:bg-white/15 transition-all">
                    <div className="absolute top-0 left-0 w-2 h-full bg-primary-400 group-hover:w-3 transition-all"></div>
-                   <h3 className="text-lg font-bold text-white mb-2 ml-2">วิสัยทัศน์และวัฒนธรรมองค์กรที่ทันสมัย</h3>
+                   <h3 className="text-lg font-bold text-white mb-2 ml-2"> สภาพแวดล้อมการทำงานที่สะดวกต่อการฝึกงาน</h3>
                    <p className="text-primary-50/80 leading-relaxed ml-2">
-                      ชื่นชอบในรูปแบบการทำงานและวัฒนธรรมองค์กรของ Exzy ที่เปิดกว้างและดูทันสมัย รับฟังความคิดเห็นที่หลากหลายเพื่อนำมาปรับใช้กับงาน
+                      บริษัทตั้งอยู่ในทำเลที่เดินทางได้สะดวก ทั้งรถไฟฟ้าและขนส่งสาธารณะ ช่วยให้การเดินทางมาฝึกงานเป็นไปอย่างสะดวกและประหยัดเวลา
                    </p>
                 </div>
             </div>
