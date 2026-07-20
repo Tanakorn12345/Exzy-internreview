@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import CultureModal from '../components/CultureModal';
 import eatingImg from '../assets/insideoffice-heic.jpg';
-import minewImg from '../assets/minew.jpg';
+import minewImg from '../assets/minew with.jpg';
 import eating1Img from '../assets/eating.jpg';
 
 const Culture = () => {

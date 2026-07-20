@@ -17,7 +17,8 @@ const Conclusion = () => {
             <img 
               src={groupPlaceholder} 
               alt="Internship Team" 
-              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 transform-gpu will-change-transform contrast-125 saturate-105"
+              style={{ imageRendering: '-webkit-optimize-contrast' }}
             />
           </div>
           
