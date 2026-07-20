@@ -1,6 +1,8 @@
 import React from 'react';
 import { Quote } from 'lucide-react';
 import meatexzy from '../assets/meatexzy1.jpg';
+import groupPlaceholder from '../assets/arjarncome.jpg'; // TODO: เปลี่ยนเป็นชื่อไฟล์รูปหมู่ที่เซฟมาใหม่
+
 const Conclusion = () => {
   return (
     <section id="conclusion" className="py-24 bg-white text-dark-500 relative overflow-hidden">
@@ -9,6 +11,18 @@ const Conclusion = () => {
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-dark-500 rounded-full mix-blend-multiply filter blur-[120px] opacity-10" />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+        {/* Group Photo Section */}
+        <div className="max-w-4xl mx-auto text-center mb-24">
+          <div className="w-full aspect-video bg-dark-400 rounded-3xl border-8 border-primary-500/20 shadow-2xl relative overflow-hidden group mb-8">
+            <img 
+              src={groupPlaceholder} 
+              alt="Internship Team" 
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+          </div>
+          
+        </div>
+
         <Quote className="w-16 h-16 text-primary-500 mx-auto mb-8 opacity-40" />
         <h2 className="text-2xl md:text-3xl font-bold mb-8 leading-tight text-dark-500">
           &quot;ประสบการณ์ที่คุ้มค่า คือการได้ลงมือทำและแก้ปัญหาหน้างานจริง&quot;
