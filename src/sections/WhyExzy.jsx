@@ -1,7 +1,27 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import Exzyoffice from '../assets/whyexzy.jpg';
+import mapexzy from '../assets/Mapexzy.png';
+import insideoffice from '../assets/insideoffice.jpg';
 
 const WhyExzy = () => {
+  const images = [Exzyoffice, mapexzy];
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
+  };
+
+  const prevSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
+  };
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      nextSlide();
+    }, 4000);
+    return () => clearInterval(timer);
+  }, [currentIndex]);
   return (
     <section id="why-exzy" className="py-20 bg-dark-500 relative">
       <div className="absolute right-0 bottom-0 w-64 h-64 bg-primary-500 rounded-full mix-blend-screen filter blur-[100px] opacity-20" />
@@ -22,7 +42,7 @@ const WhyExzy = () => {
                    <h3 className="text-lg font-bold text-white mb-2 ml-2">ได้ลงมือทำงานจริง
                    </h3>
                    <p className="text-primary-50/80 leading-relaxed ml-2">
-                    โดยขึ้นชื่อว่า Exzy ที่ผลิตระบบ Smart Workplace ซึ่งเป็นนวัตกรรมที่ใช้กันมากในบริษัทหรือสำนักงานต่างๆ เราจะได้จับผลงานจริงที่บริษัทผลิตขึ้นมา และนำสกิลด้านการแก้ไขปัญหา และทางด้านเทคนิคเกี่ยวกับระบบคอมพิวเตอร์และระบบปฏิบัติการ มาปรับใช้กับงานได้เต็มที่ครับ
+                    โดยขึ้นชื่อว่า Exzy ที่ผลิตระบบ Smart Workplace ซึ่งเป็นนวัตกรรมที่ใช้กันมากในบริษัทหรือสำนักงานต่างๆ เราจะได้จับผลงานจริงที่บริษัทผลิตขึ้นมา และนำสกิลด้านการแก้ไขปัญหา และทางด้านเทคนิคเกี่ยวกับระบบคอมพิวเตอร์และระบบปฏิบัติการที่เรามี มาปรับใช้กับงานได้เต็มที่ครับ
                    </p>
                 </div>
                 
@@ -46,12 +66,44 @@ const WhyExzy = () => {
           </div>
 
           <div className="w-full lg:w-1/2 flex justify-center items-center lg:pl-8 mt-12 lg:mt-0">
-             <div className="w-full bg-dark-400 rounded-3xl border-8 border-primary-500/20 shadow-2xl relative overflow-hidden group">
-                 <img
-                   src={Exzyoffice}
-                   alt="Exzy Office"
-                   className="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-105"
-                 />
+             <div className="w-full aspect-[4/3] bg-dark-400 rounded-3xl border-8 border-primary-500/20 shadow-2xl relative overflow-hidden group">
+                 {images.map((img, index) => (
+                   <img
+                     key={index}
+                     src={img}
+                     alt={`Exzy Slide ${index + 1}`}
+                     className={`absolute top-0 left-0 w-full h-full object-contain transition-opacity duration-1000 ${
+                       index === currentIndex ? 'opacity-100 z-10' : 'opacity-0 z-0'
+                     }`}
+                   />
+                 ))}
+                 
+                 {/* Navigation Buttons */}
+                 <button 
+                   onClick={prevSlide}
+                   className="absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-black/40 hover:bg-black/70 text-white p-2 rounded-full transition-all opacity-0 group-hover:opacity-100"
+                 >
+                   <ChevronLeft size={24} />
+                 </button>
+                 <button 
+                   onClick={nextSlide}
+                   className="absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-black/40 hover:bg-black/70 text-white p-2 rounded-full transition-all opacity-0 group-hover:opacity-100"
+                 >
+                   <ChevronRight size={24} />
+                 </button>
+
+                 {/* Indicators */}
+                 <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex gap-2">
+                   {images.map((_, index) => (
+                     <button
+                       key={index}
+                       onClick={() => setCurrentIndex(index)}
+                       className={`w-2.5 h-2.5 rounded-full transition-all ${
+                         index === currentIndex ? 'bg-primary-500 w-6' : 'bg-white/50 hover:bg-white'
+                       }`}
+                     />
+                   ))}
+                 </div>
              </div>
           </div>
           
