@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import Exzyoffice from '../assets/whyexzy.jpg';
-import mapexzy from '../assets/Mapexzy.png';
+import mapexzy from '../assets/mapexzy.png';
 import insideoffice from '../assets/insideoffice.jpg';
 
 const WhyExzy = () => {
