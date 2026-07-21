@@ -31,7 +31,7 @@ const Duties = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-dark-500 mb-4 inline-block border-b-4 border-primary-500 pb-2">หน้าที่ความรับผิดชอบ (Duties)</h2>
           <p className="text-base text-dark-500/80 max-w-2xl mx-auto mt-4">
-            งานหลักๆ ที่ได้รับมอบหมายในฐานะ IT Support Intern
+            งานหลักๆ ที่จะได้รับมอบหมายในฐานะ IT Support Intern
           </p>
         </div>
         

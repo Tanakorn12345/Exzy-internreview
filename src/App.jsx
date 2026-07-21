@@ -35,7 +35,7 @@ function App() {
         <Hero />
         <About />
         <WhyExzy />
-        <Duties />
+   
         <Projects />
         <Skills />
         <Culture />

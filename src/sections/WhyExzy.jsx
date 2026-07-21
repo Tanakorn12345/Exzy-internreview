@@ -19,10 +19,10 @@ const WhyExzy = () => {
                 {/* Reason 1 */}
                 <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl shadow-lg border border-white/20 relative overflow-hidden group hover:border-primary-400 hover:bg-white/15 transition-all">
                    <div className="absolute top-0 left-0 w-2 h-full bg-primary-400 group-hover:w-3 transition-all"></div>
-                   <h3 className="text-lg font-bold text-white mb-2 ml-2">ได้เรียนรู้จากการปฏิบัติงานจริง
+                   <h3 className="text-lg font-bold text-white mb-2 ml-2">ได้ลงมือทำงานจริง
                    </h3>
                    <p className="text-primary-50/80 leading-relaxed ml-2">
-                      มีโอกาสร่วมติดตั้ง การตั้งค่าระบบ และออกปฏิบัติงานหน้างานกับพี่เลี้ยง ทำให้ได้เรียนรู้กระบวนการทำงานจริง
+                    โดยขึ้นชื่อว่า Exzy ที่ผลิตระบบ Smart Workplace ซึ่งเป็นนวัตกรรมที่ใช้กันมากในบริษัทหรือสำนักงานต่างๆ เราจะได้จับผลงานจริงที่บริษัทผลิตขึ้นมา และนำสกิลด้านการแก้ไขปัญหา และทางด้านเทคนิคเกี่ยวกับระบบคอมพิวเตอร์และระบบปฏิบัติการ มาปรับใช้กับงานได้เต็มที่ครับ
                    </p>
                 </div>
                 
@@ -31,15 +31,15 @@ const WhyExzy = () => {
                    <div className="absolute top-0 left-0 w-2 h-full bg-primary-400 group-hover:w-3 transition-all"></div>
                    <h3 className="text-lg font-bold text-white mb-2 ml-2">พี่เลี้ยงและทีมพร้อมให้คำแนะนำ</h3>
                    <p className="text-primary-50/80 leading-relaxed ml-2">
-บรรยากาศการทำงานเป็นกันเอง สามารถสอบถามและขอคำแนะนำได้ตลอด ทำให้กล้าลองทำงานและเรียนรู้สิ่งใหม่ ๆ
+เวลาเมื่อเกิดปัญหาในการทำงานออกหน้างานกับพี่เลี้ยง (On-Site Support) เราก็จะได้ช่วยครับ ซึ่งอันไหนที่ยังไม่เข้่าใจ เราสามารถถามพี่เลี้ยงได้เลย พี่ๆใจดีมากบอกวิธีแก้ให้งานสำเร็จด้วยดีครับ หรืออยากถามเพิ่มเติมก็ถามได้เลย ทำให้เราเข้าใจตัวระบบเยอะขึ้นมากครับ
                    </p>
                 </div>
                 {/* Reason 3 */}
                 <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl shadow-lg border border-white/20 relative overflow-hidden group hover:border-primary-400 hover:bg-white/15 transition-all">
                    <div className="absolute top-0 left-0 w-2 h-full bg-primary-400 group-hover:w-3 transition-all"></div>
-                   <h3 className="text-lg font-bold text-white mb-2 ml-2"> สภาพแวดล้อมการทำงานที่สะดวกต่อการฝึกงาน</h3>
+                   <h3 className="text-lg font-bold text-white mb-2 ml-2"> ออฟฟิศติดหลายสถานที่ เดินทางมาทำงานสะดวก</h3>
                    <p className="text-primary-50/80 leading-relaxed ml-2">
-                      บริษัทตั้งอยู่ในทำเลที่เดินทางได้สะดวก ทั้งรถไฟฟ้าและขนส่งสาธารณะ ช่วยให้การเดินทางมาฝึกงานเป็นไปอย่างสะดวกและประหยัดเวลา
+              โดยตัวบริษัท Exzy ตั้งอยู่ใจกลางเมืองซึ่งคือ แถวห้วยขวางครับ ซึ่งมีรถไฟฟ้า MRT สถานีห้วยขวาง ที่ตรงมา 500 แล้วถึงที่ออฟฟิศทันทีครับ ซึ่งสะดวกและประหยัดเวลาการเดินทางมาฝึกงานของเรามาก และยังมีห้างรอบข้าง เช่น เดอะสตรีท เซ็นทรัล พระราม 9 ที่เรามักไปกินข้าวช่วงกลางวันกันครับ
                    </p>
                 </div>
             </div>
