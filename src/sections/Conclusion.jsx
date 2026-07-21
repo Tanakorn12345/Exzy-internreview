@@ -26,12 +26,11 @@ const Conclusion = () => {
 
         <Quote className="w-16 h-16 text-primary-500 mx-auto mb-8 opacity-40" />
         <h2 className="text-2xl md:text-3xl font-bold mb-8 leading-tight text-dark-500">
-          &quot;ประสบการณ์ที่คุ้มค่า คือการได้ลงมือทำและแก้ปัญหาหน้างานจริง&quot;
+          &quot;ประสบการณ์ที่คุ้มค่า คือการได้ลงมือทำจริง&quot;
         </h2>
         <p className="text-lg text-dark-500/80 leading-relaxed mb-12 max-w-3xl mx-auto">
-         การฝึกงานในตำแหน่ง IT Support ที่ Exzy ทำให้ผมได้เรียนรู้การทำงานจริงทั้งด้านระบบ Smart Office การติดตั้งและดูแลอุปกรณ์เบื้องต้น รวมถึงการออก On-site Support กับพี่เลี้ยงเพื่อช่วยแก้ไขปัญหาให้ลูกค้า นอกจากนี้ยังได้พัฒนาทักษะการสื่อสาร การทำงานร่วมกับผู้อื่น และการปรับตัวในการทำงาน สิ่งที่ประทับใจที่สุดคือบรรยากาศการทำงานที่เป็นกันเอง และพี่ ๆ ในทีมที่คอยสอนงานและให้คำแนะนำตลอดระยะเวลาการฝึกงาน
+        การมาฝึกงานตำแหน่ง IT Support ที่นี่ ทำให้เราได้เปิดโลกการทำงานจริงแบบเต็ม ๆ ทั้งจัดการเรียนรู้ระบบ Smart Office ติดตั้งอุปกรณ์ และการ On-site Support กับพี่เลี้ยง นอกจากจะได้สกิลทางเทคนิคแล้ว ยังได้ฝึกเรื่องการปรับตัวด้วย แต่สิ่งที่ทำให้ประทับใจที่สุดคือความเป็นกันเองและเอาใจใส่ของพี่ ๆ ในทีมครับ อยากขอบคุณพี่ ๆ ทุกคนที่พร้อมสอนและให้คำแนะนำมาตลอด ทำให้การฝึกงานครั้งนี้เป็นความทรงจำที่คุ้มค่ามากครับ
         </p>
-
         <div className="flex items-center justify-center gap-5 bg-primary-500/5 py-4 px-8 rounded-full border border-primary-500/20 inline-flex shadow-sm">
           {/* รูปโปรไฟล์เล็กๆ พร้อมชื่อ */}
           <div className="w-14 h-14 bg-white border-2 border-primary-500 rounded-full flex items-center justify-center text-primary-500 text-sm font-bold overflow-hidden shadow-md">
