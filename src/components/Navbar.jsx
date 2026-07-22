@@ -34,7 +34,7 @@ const Navbar = () => {
           <div className="hidden lg:flex space-x-6 xl:space-x-8">
             <a href="#about" className="text-dark-500/80 hover:text-primary-500 font-medium transition-all duration-300 hover:scale-105">About</a>
             <a href="#why-exzy" className="text-dark-500/80 hover:text-primary-500 font-medium transition-all duration-300 hover:scale-105">Why Exzy</a>
-            <a href="#duties" className="text-dark-500/80 hover:text-primary-500 font-medium transition-all duration-300 hover:scale-105">Duties</a>
+      
             <a href="#projects" className="text-dark-500/80 hover:text-primary-500 font-medium transition-all duration-300 hover:scale-105">Projects</a>
             <a href="#skills" className="text-dark-500/80 hover:text-primary-500 font-medium transition-all duration-300 hover:scale-105">Skills</a>
             <a href="#culture" className="text-dark-500/80 hover:text-primary-500 font-medium transition-all duration-300 hover:scale-105">Culture</a>
