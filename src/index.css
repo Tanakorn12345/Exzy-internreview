@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 @theme {
+  --font-sans: 'Google Sans', 'IBM Plex Sans Thai', ui-sans-serif, system-ui, sans-serif;
   --color-primary-50: #eff9f9;
   --color-primary-100: #d4ecec;
   --color-primary-500: #26a3a3; /* Lighter Teal/Cyan */
@@ -24,6 +25,6 @@
   
   body {
     @apply bg-slate-50 text-slate-900 antialiased;
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-family: 'Google Sans', 'IBM Plex Sans Thai', system-ui, -apple-system, sans-serif;
   }
 }

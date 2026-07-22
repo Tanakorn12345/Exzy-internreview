@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import Exzyoffice from '../assets/whyexzy.jpg';
-import mapexzy from '../assets/mapexzy1.png';
+import mapexzy from '../assets/mapexzy.png';
 import insideoffice from '../assets/insideoffice.jpg';
 
+
 const WhyExzy = () => {
-  const images = [Exzyoffice, mapexzy];
+  const images = [Exzyoffice, mapexzy ];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
@@ -68,14 +69,15 @@ const WhyExzy = () => {
           <div className="w-full lg:w-1/2 flex justify-center items-center lg:pl-8 mt-12 lg:mt-0">
              <div className="w-full aspect-[4/3] bg-dark-400 rounded-3xl border-8 border-primary-500/20 shadow-2xl relative overflow-hidden group">
                  {images.map((img, index) => (
-                   <img
+                   <div 
                      key={index}
-                     src={img}
-                     alt={`Exzy Slide ${index + 1}`}
-                     className={`absolute top-0 left-0 w-full h-full object-contain transition-opacity duration-1000 ${
+                     className={`absolute top-0 left-0 w-full h-full transition-opacity duration-1000 ${
                        index === currentIndex ? 'opacity-100 z-10' : 'opacity-0 z-0'
                      }`}
-                   />
+                   >
+                     <img src={img} alt="" className="absolute inset-0 w-full h-full object-cover blur-md opacity-30 scale-110" />
+                     <img src={img} alt={`Exzy Slide ${index + 1}`} className="absolute inset-0 w-full h-full object-contain drop-shadow-2xl" />
+                   </div>
                  ))}
                  
                  {/* Navigation Buttons */}

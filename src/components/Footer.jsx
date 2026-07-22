@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <div className="flex items-center justify-center gap-2 mb-4">
           <img src={exzyLogo} alt="Exzy Logo" className="w-8 h-8 object-contain border border-white rounded-lg" />
-          <span className="font-bold text-xl text-white">Intern Review</span>
+          <span className="font-bold text-xl text-white">Internship Review</span>
         </div>
         <p className="text-primary-100/60 mt-4">© 2026 IT Support Internship by tanakorn</p>
       </div>

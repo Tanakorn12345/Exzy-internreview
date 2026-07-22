@@ -28,7 +28,7 @@ const Navbar = () => {
         <div className="flex justify-between h-16 items-center">
           <div className="flex-shrink-0 flex items-center gap-2">
             <img src={exzyLogo} alt="Exzy Logo" className="w-8 h-8 object-contain border border-white rounded-lg" />
-            <span className="font-semibold text-xl text-dark-500 border-l-2 border-primary-500 pl-2 ml-1">Intern Review</span>
+            <span className="font-semibold text-xl text-dark-500 border-l-2 border-primary-500 pl-2 ml-1">Internship Review</span>
           </div>
           
           <div className="hidden lg:flex space-x-6 xl:space-x-8">

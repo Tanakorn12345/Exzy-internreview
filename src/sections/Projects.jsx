@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import ProjectCard from '../components/ProjectCard';
 import ProjectModal from '../components/ProjectModal';
-import onsiteImg from '../assets/onsite.jpg';
+import onsiteImg from '../assets/onsite2.jpg';
+import codesk from '../assets/codesk.jpg'
 import attendanceImg from '../assets/attandance1.jpg';
 import attendanceImg1 from '../assets/attandance2.jpg';
 import obsidianImg1 from '../assets/node obsidian.png';  
-import onsiteImg1 from '../assets/onsite2.jpg';
+import onsiteImg1 from '../assets/locker.jpg';
 import obsidianflow from '../assets/obsidian_kb_creation_flow.jpg';
 import onsiteflow from '../assets/onsite_support_flow.jpg';
 import attendanceflow from '../assets/attendance_app_install_flow.jpg';
@@ -23,9 +24,9 @@ const Projects = () => {
     {
       id: 2,
       title: "การออกหน้างาน (On-site Support) กับพี่เลี้ยง",
-      description: "อันนี้จะเป็นงานหลักของเราเลยครับ เราจะได้ออกหน้างานจริงกับพี่เลี้ยงจริงๆ เพื่อดูปัญหาจากลูกค้าที่แจ้งเข้ามาและแก้ไขปัญหาให้ลูกค้า เราจะได้รู้จักปัญหาที่เกิดขึ้นจากตัวฮาร์ดแวร์หรือซอฟต์แวร์แล้วก็วิธีแก้ไขปัญหาได้จริงๆ และได้ทักษะการสื่อสารกับลูกค้าด้วยครับ ซึ่งจำเป็นกับการทำงานของเราในอนาคตเลย",
+      description: "อันนี้จะเป็นงานหลักของเราเลยครับ เราจะได้ออกหน้างานจริงกับพี่เลี้ยงจริงๆ เพื่อดูปัญหาจากลูกค้าที่แจ้งเข้ามาและแก้ไขปัญหาให้ลูกค้า ซึ่งในภาพจะเป็นระบบ Locker space และ Co-desk เราจะได้รู้จักปัญหาที่เกิดขึ้นจากตัวฮาร์ดแวร์หรือซอฟต์แวร์แล้วก็วิธีแก้ไขปัญหาได้จริงๆ และได้ทักษะการสื่อสารกับลูกค้าด้วยครับ ซึ่งจำเป็นกับการทำงานของเราในอนาคตเลย",
       tags: ["Problem Solving", "Onsite Service"],    
-      images: [onsiteImg1, onsiteImg, onsiteflow]
+      images: [onsiteImg,codesk, onsiteImg1, onsiteflow]
     } , 
     {
       id: 3,
