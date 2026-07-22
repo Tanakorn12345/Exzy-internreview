@@ -30,18 +30,18 @@ const About = () => {
         <div className="flex flex-col md:flex-row gap-12 items-center">
           <div className="w-full md:w-1/2 relative group">
             <div className="absolute inset-0 bg-dark-500 rounded-2xl transform translate-x-4 translate-y-4 transition-transform group-hover:translate-x-2 group-hover:translate-y-2"></div>
-            <div className="aspect-video bg-white rounded-2xl shadow-xl flex items-center justify-center border-2 border-primary-500 relative z-10 overflow-hidden group">
-              <div className="absolute inset-0 bg-primary-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 pointer-events-none"></div>
+            <div className="w-full aspect-video bg-white rounded-2xl shadow-xl flex items-center justify-center border-2 border-primary-500 relative z-10 overflow-hidden group transform-gpu">
+              <div className="absolute inset-0 bg-primary-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-20 pointer-events-none"></div>
               
               {images.map((img, index) => (
                 <div 
                   key={index}
                   className={`absolute top-0 left-0 w-full h-full transition-opacity duration-1000 ${
-                    index === currentIndex ? 'opacity-100 z-0' : 'opacity-0 -z-10'
+                    index === currentIndex ? 'opacity-100 z-10' : 'opacity-0 z-0'
                   }`}
                 >
-                  <img src={img} alt="" className="absolute inset-0 w-full h-full object-cover blur-md opacity-30 scale-110" />
-                  <img src={img} alt={`Exzy About ${index + 1}`} className="absolute inset-0 w-full h-full object-contain drop-shadow-2xl" />
+                  <img src={img} alt="" className="absolute inset-0 w-full h-full object-cover blur-xl opacity-60 scale-110" />
+                  <img src={img} alt={`Exzy About ${index + 1}`} className="absolute inset-0 w-full h-full object-contain" />
                 </div>
               ))}
 

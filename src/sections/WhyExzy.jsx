@@ -52,7 +52,7 @@ const WhyExzy = () => {
                    <div className="absolute top-0 left-0 w-2 h-full bg-primary-400 group-hover:w-3 transition-all"></div>
                    <h3 className="text-lg font-bold text-white mb-2 ml-2">พี่เลี้ยงและทีมพร้อมให้คำแนะนำ</h3>
                    <p className="text-primary-50/80 leading-relaxed ml-2">
-                 เวลาเมื่อเกิดปัญหาในการทำงานออกหน้างานกับพี่เลี้ยง (On-Site Support) เราก็จะได้ช่วยครับ ซึ่งอันไหนที่ยังไม่เข้่าใจ เราสามารถถามพี่เลี้ยงได้เลย พี่ๆจะแนะนำวิธีแก้ให้งานสำเร็จด้วยดีครับ หรืออยากถามเพิ่มเติมก็ถามได้เลย ทำให้เราเข้าใจตัวระบบเยอะขึ้นมากครับ
+                 เวลาเมื่อเกิดปัญหาในการทำงานออกหน้างานกับพี่เลี้ยง (On-Site Support) เราก็จะได้ช่วยครับ ซึ่งอันไหนที่ยังไม่เข้่าใจ เราสามารถถามพี่เลี้ยงได้เลย พี่ๆจะแนะนำวิธีแก้ไขให้ใช้งานได้ปกติ หรืออยากถามเพิ่มเติมก็ถามได้เลย ทำให้เราเข้าใจตัวระบบเยอะขึ้นมากครับ
                    </p>
                 </div>
                 {/* Reason 3 */}
@@ -67,7 +67,7 @@ const WhyExzy = () => {
           </div>
 
           <div className="w-full lg:w-1/2 flex justify-center items-center lg:pl-8 mt-12 lg:mt-0">
-             <div className="w-full aspect-[4/3] bg-dark-400 rounded-3xl border-8 border-primary-500/20 shadow-2xl relative overflow-hidden group">
+             <div className="w-full aspect-[4/3] bg-dark-400 rounded-3xl border-8 border-primary-500/20 shadow-2xl relative overflow-hidden group transform-gpu">
                  {images.map((img, index) => (
                    <div 
                      key={index}
@@ -75,8 +75,8 @@ const WhyExzy = () => {
                        index === currentIndex ? 'opacity-100 z-10' : 'opacity-0 z-0'
                      }`}
                    >
-                     <img src={img} alt="" className="absolute inset-0 w-full h-full object-cover blur-md opacity-30 scale-110" />
-                     <img src={img} alt={`Exzy Slide ${index + 1}`} className="absolute inset-0 w-full h-full object-contain drop-shadow-2xl" />
+                     <img src={img} alt="" className="absolute inset-0 w-full h-full object-cover blur-xl opacity-50 scale-110" />
+                     <img src={img} alt={`Exzy Slide ${index + 1}`} className="absolute inset-0 w-full h-full object-contain" />
                    </div>
                  ))}
                  
