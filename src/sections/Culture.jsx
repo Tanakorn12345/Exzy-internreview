@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import CultureModal from '../components/CultureModal';
 import eatingImg from '../assets/insideoffice-heic.jpg';
-import minewImg from '../assets/minew with.jpg';
+import minewImg from '../assets/minew.JPG';
 import eating1Img from '../assets/eating.jpg';
 
 const Culture = () => {
@@ -20,7 +20,7 @@ const Culture = () => {
       id: 2,
       src: minewImg,
       title: "ได้ดูระบบการจัดการ Minew",
-      description: "อันนี้เป็นส่วนหนึ่งที่พี่เลี้ยงให้ศึกษาครับ เกี่ยวกับการทำงานของระบบ Minew และ Gateway ซึ่งเป็นส่วนหนึ่งของระบบ Co-Desk โดยช่วยตรวจสอบการรับส่งข้อมูล (Traffic) ระหว่างการทดสอบระบบ และจัดทำเอกสารการตั้งค่าพื้นฐานลงใน Obsidian เพื่อใช้เป็นข้อมูลอ้างอิงภายในองค์กร",
+      description: "อันนี้เป็นส่วนหนึ่งที่พี่เลี้ยงให้ศึกษาครับ เกี่ยวกับการทำงานของระบบ Minew และ Gateway ที่ตัว gateway จะเป็นตัวเชื่อมระหว่างตัวจอ minew ที่เป็นหน้าจอสำหรับการจองที่ติดตามโต๊ะ เข้ากับตัวระบบ ซึ่งก็คือระบบ Co-Desk นั้นเองครับ โดยช่วยตรวจสอบการรับส่งข้อมูล (Traffic) ระหว่างการทดสอบระบบ และจัดทำเอกสารการตั้งค่าพื้นฐานลงใน Obsidian เพื่อใช้เป็นข้อมูลอ้างอิงภายในองค์กร",
       gridClass: "col-span-1 md:col-span-1"
     },
     {
