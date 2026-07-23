@@ -3,6 +3,7 @@ import CultureModal from '../components/CultureModal';
 import eatingImg from '../assets/inside.jpg';
 import minewImg from '../assets/minew.JPG';
 import eating1Img from '../assets/eating.jpg';
+import lunch from '../assets/lunch.JPG'
 
 const Culture = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -18,9 +19,9 @@ const Culture = () => {
     },
     {
       id: 2,
-      src: minewImg,
-      title: "ได้ดูระบบการจัดการ Minew",
-      description: "อันนี้เป็นส่วนหนึ่งที่พี่เลี้ยงให้ศึกษาครับ เกี่ยวกับการทำงานของระบบ Minew และ Gateway ที่ตัว gateway จะเป็นตัวเชื่อมระหว่างตัวจอ minew ที่เป็นหน้าจอสำหรับการจองที่ติดตามโต๊ะ เข้ากับตัวระบบ ซึ่งก็คือระบบ Co-Desk นั้นเองครับ โดยช่วยตรวจสอบการรับส่งข้อมูล (Traffic) ระหว่างการทดสอบระบบ และจัดทำเอกสารการตั้งค่าพื้นฐานลงใน Obsidian เพื่อใช้เป็นข้อมูลอ้างอิงภายในองค์กร",
+      src: lunch,
+      title: "กินอาหารเที่ยงด้วยกัน",
+      description: "ในทุกๆเที่ยง เราจะมีการไปกินข้าวกันในทีมครับ โดยเราก็จะติดรถพี่ๆไปด้วยกันครับ ซึ่งออฟฟิศของ Exzy ติดหลายสถานที่เลยครับ ทั้ง The Street หรือร้านอาหารที่อยู่ภายในซอย ซึ่งไม่ไกลมากจากออฟฟิศทำให้ไปกินได้บ่อยๆ โดยแต่ละมื้อไม่ซ้ำกันเลยครับ เปลี่ยนเมนูทุกๆวันไม่มีเบื้อแน่นอน อีกทั้งอาหารแถวนี้ก็อร่อยมากครับ ",
       gridClass: "col-span-1 md:col-span-1"
     },
     {
