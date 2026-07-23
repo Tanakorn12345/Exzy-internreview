@@ -43,7 +43,7 @@ const Projects = () => {
       id: 4,
       title: "การตรวจสอบสถานะอุปกรณ์ Minew",
       description: "อันนี้เป็นส่วนหนึ่งที่พี่เลี้ยงให้ศึกษาครับ เกี่ยวกับการทำงานของระบบ Minew และ Gateway ที่ตัว gateway จะเป็นตัวเชื่อมระหว่างตัวจอ minew ที่เป็นหน้าจอสำหรับการจองที่ติดตามโต๊ะ เข้ากับตัวระบบ ซึ่งก็คือระบบ Co-Desk นั้นเองครับ โดยช่วยตรวจสอบสถานะอุปกรณ์ และจัดทำเอกสารการจัดการหลังบ้านของ Minew ลงใน Obsidian เพื่อใช้เป็นข้อมูลอ้างอิงภายในองค์กร",
-      tags: ["Intelligent Hub", "Access Control"],    
+      tags: ["Minew", "Gateway"],    
       images: [dashboard, minew , gateway,minewflow]
 
     }
