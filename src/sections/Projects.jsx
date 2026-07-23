@@ -10,7 +10,10 @@ import onsiteImg1 from '../assets/locker.jpg';
 import obsidianflow from '../assets/obsidian_kb_creation_flow.jpg';
 import onsiteflow from '../assets/onsite_support_flow.jpg';
 import attendanceflow from '../assets/attendance_app_install_flow.jpg';
-import minew from '../assets/minew.JPG'
+import minew from '../assets/mineww.JPG'
+import dashboard from '../assets/dashboard minew.jpg'
+import gateway from '../assets/Gateway.png'
+import minewflow from '../assets/minew_check_flow.jpg'
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
@@ -41,7 +44,7 @@ const Projects = () => {
       title: "การตรวจสอบสถานะอุปกรณ์ Minew",
       description: "อันนี้เป็นส่วนหนึ่งที่พี่เลี้ยงให้ศึกษาครับ เกี่ยวกับการทำงานของระบบ Minew และ Gateway ที่ตัว gateway จะเป็นตัวเชื่อมระหว่างตัวจอ minew ที่เป็นหน้าจอสำหรับการจองที่ติดตามโต๊ะ เข้ากับตัวระบบ ซึ่งก็คือระบบ Co-Desk นั้นเองครับ โดยช่วยตรวจสอบสถานะอุปกรณ์ และจัดทำเอกสารการจัดการหลังบ้านของ Minew ลงใน Obsidian เพื่อใช้เป็นข้อมูลอ้างอิงภายในองค์กร",
       tags: ["Intelligent Hub", "Access Control"],    
-      images: [minew, attendanceImg1, attendanceflow]
+      images: [dashboard, minew , gateway,minewflow]
 
     }
   ];
