@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import CultureModal from '../components/CultureModal';
-import eatingImg from '../assets/insideoffice-heic.jpg';
+import eatingImg from '../assets/inside.jpg';
 import minewImg from '../assets/minew.JPG';
 import eating1Img from '../assets/eating.jpg';
 

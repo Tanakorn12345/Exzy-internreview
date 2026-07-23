@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import Exzyoffice from '../assets/whyexzy.jpg';
 import mapexzy from '../assets/mapexzy.png';
-import insideoffice from '../assets/insideoffice.jpg';
+
 
 
 const WhyExzy = () => {
@@ -40,21 +40,15 @@ const WhyExzy = () => {
                 {/* Reason 1 */}
                 <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl shadow-lg border border-white/20 relative overflow-hidden group hover:border-primary-400 hover:bg-white/15 transition-all">
                    <div className="absolute top-0 left-0 w-2 h-full bg-primary-400 group-hover:w-3 transition-all"></div>
-                   <h3 className="text-lg font-bold text-white mb-2 ml-2">ได้ลงมือทำงานจริง
+                   <h3 className="text-lg font-bold text-white mb-2 ml-2">ผลิตภัณฑ์ที่น่าสนใจและพร้อมสำหรับอนาคต
                    </h3>
                    <p className="text-primary-50/80 leading-relaxed ml-2">
-                    โดยขึ้นชื่อว่า Exzy ที่ผลิตระบบ Smart Workplace ซึ่งเป็นนวัตกรรมที่ใช้กันมากในบริษัทหรือสำนักงานต่างๆ เราจะได้จับผลงานจริงที่บริษัทผลิตขึ้นมา และนำสกิลด้านการแก้ไขปัญหา และทางด้านเทคนิคเกี่ยวกับระบบคอมพิวเตอร์และระบบปฏิบัติการที่เรามี มาปรับใช้กับงานได้เต็มที่ครับ
+                    ก่อนสมัครฝึกงาน ผมได้ศึกษาข้อมูลเกี่ยวกับ Exzy และสิ่งที่ทำให้ผมตัดสินใจเลือกฝึกงานที่นี่ คือผลิตภัณฑ์ของบริษัทที่มีความทันสมัยที่รองรับตั้งแต่การเข้าบริษัทจนถึงระบบการทำงานเลย และยังถูกนำไปใช้งานจริงในหลายองค์กรด้วย ทำให้ผมอยากเรียนรู้ทั้งเทคโนโลยี แนวคิดในการพัฒนาระบบ และการทำงานกับผลิตภัณฑ์จริง ซึ่งเป็นโซลูชันที่กำลังได้รับความนิยมและตอบโจทย์การทำงานขององค์กรในปัจจุบันด้วยครับ 
                    </p>
                 </div>
                 
                 {/* Reason 2 */}
-                <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl shadow-lg border border-white/20 relative overflow-hidden group hover:border-primary-400 hover:bg-white/15 transition-all">
-                   <div className="absolute top-0 left-0 w-2 h-full bg-primary-400 group-hover:w-3 transition-all"></div>
-                   <h3 className="text-lg font-bold text-white mb-2 ml-2">พี่เลี้ยงและทีมพร้อมให้คำแนะนำ</h3>
-                   <p className="text-primary-50/80 leading-relaxed ml-2">
-                 เวลาเมื่อเกิดปัญหาในการทำงานออกหน้างานกับพี่เลี้ยง (On-Site Support) เราก็จะได้ช่วยครับ ซึ่งอันไหนที่ยังไม่เข้่าใจ เราสามารถถามพี่เลี้ยงได้เลย พี่ๆจะแนะนำวิธีแก้ไขให้ใช้งานได้ปกติ หรืออยากถามเพิ่มเติมก็ถามได้เลย ทำให้เราเข้าใจตัวระบบเยอะขึ้นมากครับ
-                   </p>
-                </div>
+                
                 {/* Reason 3 */}
                 <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl shadow-lg border border-white/20 relative overflow-hidden group hover:border-primary-400 hover:bg-white/15 transition-all">
                    <div className="absolute top-0 left-0 w-2 h-full bg-primary-400 group-hover:w-3 transition-all"></div>
