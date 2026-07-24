@@ -10,7 +10,7 @@ import onsiteImg1 from '../assets/locker.jpg';
 import obsidianflow from '../assets/obsidian_kb_creation_flow.jpg';
 import onsiteflow from '../assets/onsite_support_flow.jpg';
 import attendanceflow from '../assets/attendance_app_install_flow.jpg';
-import minew from '../assets/mineww.JPG'
+import minew from '../assets/mineww.jpg'
 import dashboard from '../assets/dashboard minew.jpg'
 import gateway from '../assets/Gateway.png'
 import minewflow from '../assets/minew_check_flow.jpg'
